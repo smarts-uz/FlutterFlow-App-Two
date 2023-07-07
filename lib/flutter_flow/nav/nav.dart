@@ -104,6 +104,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'LoginPage',
           path: '/loginPage',
           builder: (context, params) => LoginPageWidget(),
+        ),
+        FFRoute(
+          name: 'Updatenote',
+          path: '/updatenote',
+          builder: (context, params) => UpdatenoteWidget(
+            notes: params.getParam<NotesRow>('notes', ParamType.SupabaseRow),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

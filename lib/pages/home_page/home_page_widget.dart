@@ -117,36 +117,69 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 );
               }
               List<NotesRow> listViewNotesRowList = snapshot.data!;
-              return ListView.builder(
-                padding: EdgeInsets.zero,
-                scrollDirection: Axis.vertical,
-                itemCount: listViewNotesRowList.length,
-                itemBuilder: (context, listViewIndex) {
-                  final listViewNotesRow = listViewNotesRowList[listViewIndex];
-                  return ListTile(
-                    title: Text(
-                      listViewNotesRow.title!,
-                      style: FlutterFlowTheme.of(context).titleLarge.override(
-                            fontFamily: 'Outfit',
-                            color: FlutterFlowTheme.of(context).error,
-                          ),
-                    ),
-                    subtitle: Text(
-                      listViewNotesRow.description!,
-                      style: FlutterFlowTheme.of(context).labelMedium.override(
-                            fontFamily: 'Readex Pro',
-                            color: FlutterFlowTheme.of(context).tertiary,
-                          ),
-                    ),
-                    trailing: Icon(
-                      Icons.edit,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
+              return InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  await NotesTable().delete(
+                    matchingRows: (rows) => rows,
                   );
                 },
+                child: ListView.builder(
+                  padding: EdgeInsets.zero,
+                  scrollDirection: Axis.vertical,
+                  itemCount: listViewNotesRowList.length,
+                  itemBuilder: (context, listViewIndex) {
+                    final listViewNotesRow =
+                        listViewNotesRowList[listViewIndex];
+                    return InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed(
+                          'Updatenote',
+                          queryParameters: {
+                            'notes': serializeParam(
+                              listViewNotesRow,
+                              ParamType.SupabaseRow,
+                            ),
+                          }.withoutNulls,
+                        );
+                      },
+                      child: ListTile(
+                        title: Text(
+                          listViewNotesRow.title!,
+                          style:
+                              FlutterFlowTheme.of(context).titleLarge.override(
+                                    fontFamily: 'Outfit',
+                                    color: FlutterFlowTheme.of(context).error,
+                                  ),
+                        ),
+                        subtitle: Text(
+                          listViewNotesRow.description!,
+                          style: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .override(
+                                fontFamily: 'Readex Pro',
+                                color: FlutterFlowTheme.of(context).tertiary,
+                              ),
+                        ),
+                        trailing: Icon(
+                          Icons.edit,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 20.0,
+                        ),
+                        tileColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        dense: false,
+                      ),
+                    );
+                  },
+                ),
               );
             },
           ),
