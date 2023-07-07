@@ -54,22 +54,42 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed('CreateNotePage');
-                  },
-                  child: Icon(
-                    Icons.add,
-                    color: FlutterFlowTheme.of(context).primaryBackground,
-                    size: 24.0,
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('CreateNotePage');
+                      },
+                      child: Icon(
+                        Icons.add,
+                        color: FlutterFlowTheme.of(context).primaryBackground,
+                        size: 24.0,
+                      ),
+                    ),
                   ),
-                ),
+                  InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('LoginPage');
+                    },
+                    child: Icon(
+                      Icons.login,
+                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      size: 24.0,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
@@ -119,7 +139,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                     ),
                     trailing: Icon(
-                      Icons.arrow_forward_ios,
+                      Icons.edit,
                       color: FlutterFlowTheme.of(context).secondaryText,
                       size: 20.0,
                     ),

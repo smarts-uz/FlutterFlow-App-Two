@@ -17,12 +17,12 @@ class NotesRow extends SupabaseDataRow {
   DateTime? get createdAt => getField<DateTime>('created_at');
   set createdAt(DateTime? value) => setField<DateTime>('created_at', value);
 
+  int get id => getField<int>('id')!;
+  set id(int value) => setField<int>('id', value);
+
   String? get title => getField<String>('title');
   set title(String? value) => setField<String>('title', value);
 
   String? get description => getField<String>('description');
   set description(String? value) => setField<String>('description', value);
-
-  int get id => getField<int>('id')!;
-  set id(int value) => setField<int>('id', value);
 }

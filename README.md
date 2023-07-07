@@ -1,4 +1,4 @@
-# FlutterFlow-FeaturesApp-Two
+# FlutterFlow-Supabase-App-Two
 
 A new Flutter project.
 

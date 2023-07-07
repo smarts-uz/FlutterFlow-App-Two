@@ -1,4 +1,4 @@
-package com.mycompany.flutterflowfeaturesapptwo
+package com.mycompany.flutterflowsupabaseapptwo
 
 import io.flutter.embedding.android.FlutterActivity
 
