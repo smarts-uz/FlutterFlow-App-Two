@@ -77,13 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? RichTextPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageWidget() : LoginPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? RichTextPageWidget()
+              : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -111,6 +112,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => UpdatenoteWidget(
             notes: params.getParam<NotesRow>('notes', ParamType.SupabaseRow),
           ),
+        ),
+        FFRoute(
+          name: 'RichTextPage',
+          path: '/richTextPage',
+          builder: (context, params) => RichTextPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

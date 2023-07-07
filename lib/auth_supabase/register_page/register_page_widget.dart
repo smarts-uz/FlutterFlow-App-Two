@@ -353,7 +353,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       'email': _model.emailTextController.text,
                     });
 
-                    context.goNamedAuth('HomePage', context.mounted);
+                    context.goNamedAuth('RichTextPage', context.mounted);
                   },
                   text: 'Sign UP',
                   options: FFButtonOptions(
