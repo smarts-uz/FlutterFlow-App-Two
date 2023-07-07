@@ -77,13 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? ImageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? CircleImageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? ImageWidget() : LoginPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? CircleImageWidget()
+              : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -121,6 +122,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Image',
           path: '/image',
           builder: (context, params) => ImageWidget(),
+        ),
+        FFRoute(
+          name: 'CircleImage',
+          path: '/circleImage',
+          builder: (context, params) => CircleImageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
