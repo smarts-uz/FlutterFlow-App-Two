@@ -6,4 +6,6 @@ export '/data_backend/create_note_page/create_note_page_widget.dart'
     show CreateNotePageWidget;
 export '/auth_supabase/login_page/login_page_widget.dart' show LoginPageWidget;
 export '/data_backend/updatenote/updatenote_widget.dart' show UpdatenoteWidget;
-export '/rich_text_page/rich_text_page_widget.dart' show RichTextPageWidget;
+export '/ui_base_element/rich_text_page/rich_text_page_widget.dart'
+    show RichTextPageWidget;
+export '/ui_base_element/image/image_widget.dart' show ImageWidget;

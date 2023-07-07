@@ -201,7 +201,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('RichTextPage', context.mounted);
+                    context.goNamedAuth('Image', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

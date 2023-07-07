@@ -77,14 +77,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? RichTextPageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? ImageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? RichTextPageWidget()
-              : LoginPageWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? ImageWidget() : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -117,6 +116,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'RichTextPage',
           path: '/richTextPage',
           builder: (context, params) => RichTextPageWidget(),
+        ),
+        FFRoute(
+          name: 'Image',
+          path: '/image',
+          builder: (context, params) => ImageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
