@@ -8,6 +8,8 @@ export '/auth_supabase/login_page/login_page_widget.dart' show LoginPageWidget;
 export '/data_backend/updatenote/updatenote_widget.dart' show UpdatenoteWidget;
 export '/ui_base_element/rich_text_page/rich_text_page_widget.dart'
     show RichTextPageWidget;
-export '/ui_base_element/image/image_widget.dart' show ImageWidget;
+export '/ui_base_element/image_page/image_page_widget.dart'
+    show ImagePageWidget;
 export '/ui_base_element/circle_image/circle_image_widget.dart'
     show CircleImageWidget;
+export '/ui_base_element/icon_page/icon_page_widget.dart' show IconPageWidget;

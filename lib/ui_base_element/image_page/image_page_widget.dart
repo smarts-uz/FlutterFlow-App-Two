@@ -3,25 +3,25 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'image_model.dart';
-export 'image_model.dart';
+import 'image_page_model.dart';
+export 'image_page_model.dart';
 
-class ImageWidget extends StatefulWidget {
-  const ImageWidget({Key? key}) : super(key: key);
+class ImagePageWidget extends StatefulWidget {
+  const ImagePageWidget({Key? key}) : super(key: key);
 
   @override
-  _ImageWidgetState createState() => _ImageWidgetState();
+  _ImagePageWidgetState createState() => _ImagePageWidgetState();
 }
 
-class _ImageWidgetState extends State<ImageWidget> {
-  late ImageModel _model;
+class _ImagePageWidgetState extends State<ImagePageWidget> {
+  late ImagePageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ImageModel());
+    _model = createModel(context, () => ImagePageModel());
   }
 
   @override
