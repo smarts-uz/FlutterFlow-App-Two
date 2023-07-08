@@ -41,3 +41,5 @@ export '/ui_base_element/lottie_animation_page/lottie_animation_page_widget.dart
     show LottieAnimationPageWidget;
 export '/ui_base_element/blur_page/blur_page_widget.dart' show BlurPageWidget;
 export '/transform_page/transform_page_widget.dart' show TransformPageWidget;
+export '/rive_animation_page/rive_animation_page_widget.dart'
+    show RiveAnimationPageWidget;
