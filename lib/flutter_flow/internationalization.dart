@@ -1057,6 +1057,47 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': '',
     },
   },
+  // ChartPage
+  {
+    'lsarrf2x': {
+      'uz': 'ChartPage',
+      'en': '',
+      'ru': '',
+    },
+    'h9u15w0d': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // TimerPage
+  {
+    '7kxrmqh7': {
+      'uz': 'Start',
+      'en': '',
+      'ru': '',
+    },
+    'gkwn181c': {
+      'uz': 'Stop',
+      'en': '',
+      'ru': '',
+    },
+    '1i005daa': {
+      'uz': 'Reset',
+      'en': '',
+      'ru': '',
+    },
+    '8o9hqz09': {
+      'uz': 'Timer',
+      'en': '',
+      'ru': '',
+    },
+    '7b9wqvfb': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
   // Miscellaneous
   {
     'qazls28x': {

@@ -365,7 +365,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       'email': _model.emailTextController.text,
                     });
 
-                    context.goNamedAuth('BadgePage', context.mounted);
+                    context.goNamedAuth('TimerPage', context.mounted);
                   },
                   text: FFLocalizations.of(context).getText(
                     'o5d9g6k6' /* Sign UP */,

@@ -78,13 +78,10 @@ class _BadgePageWidgetState extends State<BadgePageWidget> {
                   position: badges.BadgePosition.topEnd(),
                   animationType: badges.BadgeAnimationType.scale,
                   toAnimate: true,
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(6.0, 6.0, 6.0, 6.0),
-                    child: Icon(
-                      Icons.notifications,
-                      color: FlutterFlowTheme.of(context).primaryBackground,
-                      size: 24.0,
-                    ),
+                  child: Icon(
+                    Icons.notifications,
+                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    size: 24.0,
                   ),
                 ),
               ),

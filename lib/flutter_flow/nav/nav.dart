@@ -78,13 +78,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? BadgePageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? TimerPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? BadgePageWidget() : LoginPageWidget(),
+              appStateNotifier.loggedIn ? TimerPageWidget() : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -237,6 +237,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'BadgePage',
           path: '/badgePage',
           builder: (context, params) => BadgePageWidget(),
+        ),
+        FFRoute(
+          name: 'ChartPage',
+          path: '/chartPage',
+          builder: (context, params) => ChartPageWidget(),
+        ),
+        FFRoute(
+          name: 'TimerPage',
+          path: '/timerPage',
+          builder: (context, params) => TimerPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

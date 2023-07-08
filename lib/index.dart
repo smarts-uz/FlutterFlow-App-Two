@@ -54,3 +54,5 @@ export '/language_selector_page/language_selector_page_widget.dart'
     show LanguageSelectorPageWidget;
 export '/ui_base_element/badge_page/badge_page_widget.dart'
     show BadgePageWidget;
+export '/chart_page/chart_page_widget.dart' show ChartPageWidget;
+export '/timer_page/timer_page_widget.dart' show TimerPageWidget;
