@@ -35,3 +35,5 @@ export '/ui_base_element/audio_player_page/audio_player_page_widget.dart'
     show AudioPlayerPageWidget;
 export '/ui_base_element/web_view_page/web_view_page_widget.dart'
     show WebViewPageWidget;
+export '/ui_base_element/static_map_page/static_map_page_widget.dart'
+    show StaticMapPageWidget;

@@ -78,13 +78,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? WebViewPageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? StaticMapPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? WebViewPageWidget()
+              ? StaticMapPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -188,6 +188,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'WebViewPage',
           path: '/webViewPage',
           builder: (context, params) => WebViewPageWidget(),
+        ),
+        FFRoute(
+          name: 'StaticMapPage',
+          path: '/staticMapPage',
+          builder: (context, params) => StaticMapPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
