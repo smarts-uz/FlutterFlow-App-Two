@@ -19,5 +19,7 @@ export '/ui_base_element/icon_button/icon_button_widget.dart'
     show IconButtonWidget;
 export '/ui_base_element/list_tile_page/list_tile_page_widget.dart'
     show ListTilePageWidget;
-export '/video_player_page/video_player_page_widget.dart'
+export '/ui_base_element/video_player_page/video_player_page_widget.dart'
     show VideoPlayerPageWidget;
+export '/ui_base_element/youtube_player_page/youtube_player_page_widget.dart'
+    show YoutubePlayerPageWidget;
