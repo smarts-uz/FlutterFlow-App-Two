@@ -201,7 +201,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('IconButton', context.mounted);
+                    context.goNamedAuth('ListTilePage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

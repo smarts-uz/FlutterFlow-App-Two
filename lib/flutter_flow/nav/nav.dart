@@ -77,13 +77,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? IconButtonWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? ListTilePageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? IconButtonWidget()
+              ? ListTilePageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -142,6 +142,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'IconButton',
           path: '/iconButton',
           builder: (context, params) => IconButtonWidget(),
+        ),
+        FFRoute(
+          name: 'ListTilePage',
+          path: '/listTilePage',
+          builder: (context, params) => ListTilePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -17,3 +17,4 @@ export '/ui_base_element/button_page/button_page_widget.dart'
     show ButtonPageWidget;
 export '/ui_base_element/icon_button/icon_button_widget.dart'
     show IconButtonWidget;
+export '/list_tile_page/list_tile_page_widget.dart' show ListTilePageWidget;
