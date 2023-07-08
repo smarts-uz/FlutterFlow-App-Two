@@ -45,7 +45,9 @@ class _WebViewPageWidgetState extends State<WebViewPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'WebView',
+            FFLocalizations.of(context).getText(
+              'prn58kl6' /* WebView */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

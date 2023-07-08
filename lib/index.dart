@@ -47,3 +47,5 @@ export '/html_view_page/html_view_page_widget.dart' show HtmlViewPageWidget;
 export '/pdf_viewer_page/pdf_viewer_page_widget.dart' show PdfViewerPageWidget;
 export '/progress_bar_page/progress_bar_page_widget.dart'
     show ProgressBarPageWidget;
+export '/language_selector_page/language_selector_page_widget.dart'
+    show LanguageSelectorPageWidget;

@@ -45,7 +45,9 @@ class _VideoPlayerPageWidgetState extends State<VideoPlayerPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'VideoPlayer',
+            FFLocalizations.of(context).getText(
+              'tpa7rvxv' /* VideoPlayer */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

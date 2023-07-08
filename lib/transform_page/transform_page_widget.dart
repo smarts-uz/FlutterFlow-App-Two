@@ -79,7 +79,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Transform',
+            FFLocalizations.of(context).getText(
+              'bse859ys' /* Transform */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -136,7 +138,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Oil Change',
+                                          FFLocalizations.of(context).getText(
+                                            'pbxonjn9' /* Oil Change */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
@@ -151,7 +155,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
-                                            'Tesla Model Y',
+                                            FFLocalizations.of(context).getText(
+                                              'dbrpaac0' /* Tesla Model Y */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineSmall
                                                 .override(
@@ -167,7 +173,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
-                                            '#495242',
+                                            FFLocalizations.of(context).getText(
+                                              'k9a6csdv' /* #495242 */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .labelSmall
                                                 .override(
@@ -227,7 +235,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
-                                      'In Preparation',
+                                      FFLocalizations.of(context).getText(
+                                        '3g2jr1cl' /* In Preparation */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
@@ -243,7 +253,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
-                                    '4:30pm',
+                                    FFLocalizations.of(context).getText(
+                                      'lyuj4q8m' /* 4:30pm */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -323,7 +335,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Firenze - Giardino Bardini',
+                                        FFLocalizations.of(context).getText(
+                                          '9spzhdoi' /* Firenze - Giardino Bardini */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
@@ -356,7 +370,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 0.0, 0.0),
                                               child: Text(
-                                                '4.7',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '5igf968r' /* 4.7 */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall
@@ -388,7 +405,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         8.0, 0.0, 8.0, 0.0),
                                     child: Text(
-                                      '\$220 USD',
+                                      FFLocalizations.of(context).getText(
+                                        'ythg3p6r' /* $220 USD */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
@@ -428,7 +447,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 12.0, 0.0, 0.0),
                           child: Text(
-                            'You quotes',
+                            FFLocalizations.of(context).getText(
+                              '4t4s67ml' /* You quotes */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
@@ -443,7 +464,9 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 4.0, 0.0, 12.0),
                           child: Text(
-                            'You will find your quote options below.',
+                            FFLocalizations.of(context).getText(
+                              'yacvpofg' /* You will find your quote optio... */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -491,7 +514,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                           children: [
                                             Expanded(
                                               child: Text(
-                                                'Company Name',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'egn5wstv' /* Company Name */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -515,7 +541,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 4.0, 0.0),
                                               child: Text(
-                                                '4.5',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'ljmuyh5l' /* 4.5 */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -531,7 +560,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               ),
                                             ),
                                             Text(
-                                              '(242)',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '7vugkpoy' /* (242) */,
+                                              ),
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodySmall
@@ -555,7 +587,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                                 CrossAxisAlignment.end,
                                             children: [
                                               Text(
-                                                '\$194.25',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'yqsfnyic' /* $194.25 */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .displaySmall
@@ -570,7 +605,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               ),
                                               Expanded(
                                                 child: Text(
-                                                  '/mo',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'tzg4nxam' /* /mo */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodySmall
@@ -612,7 +650,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               size: 24.0,
                                             ),
                                             Text(
-                                              '\$124.29 yearly savings',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'q9v5hhm1' /* $124.29 yearly savings */,
+                                              ),
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -661,7 +702,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                           children: [
                                             Expanded(
                                               child: Text(
-                                                'Company Name',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'izcfn0yl' /* Company Name */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -685,7 +729,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 4.0, 0.0),
                                               child: Text(
-                                                '4.5',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'mjxr17ex' /* 4.5 */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -701,7 +748,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               ),
                                             ),
                                             Text(
-                                              '(242)',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'n0n4m0rq' /* (242) */,
+                                              ),
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodySmall
@@ -725,7 +775,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                                 CrossAxisAlignment.end,
                                             children: [
                                               Text(
-                                                '\$194.25',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'ulu9v3du' /* $194.25 */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .displaySmall
@@ -740,7 +793,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               ),
                                               Expanded(
                                                 child: Text(
-                                                  '/mo',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'tm3bhsj9' /* /mo */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodySmall
@@ -782,7 +838,10 @@ class _TransformPageWidgetState extends State<TransformPageWidget>
                                               size: 24.0,
                                             ),
                                             Text(
-                                              '\$124.29 yearly savings',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'dagjk883' /* $124.29 yearly savings */,
+                                              ),
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium

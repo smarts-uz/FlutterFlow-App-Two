@@ -45,7 +45,9 @@ class _AudioPlayerPageWidgetState extends State<AudioPlayerPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'AudioPlayer',
+            FFLocalizations.of(context).getText(
+              '5oh3lyqo' /* AudioPlayer */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

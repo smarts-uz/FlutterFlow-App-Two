@@ -47,7 +47,9 @@ class _StaticMapPageWidgetState extends State<StaticMapPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'StaticMap',
+            FFLocalizations.of(context).getText(
+              'jj8gq9wv' /* StaticMap */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

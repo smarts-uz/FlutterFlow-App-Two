@@ -16,7 +16,9 @@ class LoginPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? emailFieldControllerValidator;
   String? _emailFieldControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        '2gwp5mbm' /* Field is required */,
+      );
     }
 
     if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
@@ -31,11 +33,15 @@ class LoginPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? passwordFieldControllerValidator;
   String? _passwordFieldControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        '5nslo8x8' /* Field is required */,
+      );
     }
 
     if (val.length < 8) {
-      return 'Password requires at least 8 characters';
+      return FFLocalizations.of(context).getText(
+        'h6bjcmuh' /* Password requires at least 8 c... */,
+      );
     }
 
     return null;

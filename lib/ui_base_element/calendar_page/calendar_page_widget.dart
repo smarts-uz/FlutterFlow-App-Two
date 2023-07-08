@@ -45,7 +45,9 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Calendar Page',
+            FFLocalizations.of(context).getText(
+              'bfqdtjiq' /* Calendar Page */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -78,6 +80,7 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
                   dateStyle: FlutterFlowTheme.of(context).bodyMedium,
                   selectedDateStyle: FlutterFlowTheme.of(context).titleSmall,
                   inactiveDateStyle: FlutterFlowTheme.of(context).labelMedium,
+                  locale: FFLocalizations.of(context).languageCode,
                 ),
               ],
             ),

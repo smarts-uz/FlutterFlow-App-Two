@@ -88,7 +88,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                   ),
                 ),
                 Text(
-                  'Register by Supabse',
+                  FFLocalizations.of(context).getText(
+                    '8xxkzjfo' /* Register by Supabse */,
+                  ),
                   style: FlutterFlowTheme.of(context).titleLarge,
                 ),
                 Form(
@@ -105,7 +107,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: 'Full name',
+                            labelText: FFLocalizations.of(context).getText(
+                              '8i1cdiit' /* Full name */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -153,7 +157,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: 'Email',
+                            labelText: FFLocalizations.of(context).getText(
+                              'qlqnbwjw' /* Email */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -201,7 +207,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: !_model.passwordVisibility1,
                           decoration: InputDecoration(
-                            labelText: 'Password',
+                            labelText: FFLocalizations.of(context).getText(
+                              'q8k4rzq4' /* Password */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -262,7 +270,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: !_model.passwordVisibility2,
                           decoration: InputDecoration(
-                            labelText: 'Confirm password',
+                            labelText: FFLocalizations.of(context).getText(
+                              '286n3bw6' /* Confirm password */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -355,9 +365,12 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       'email': _model.emailTextController.text,
                     });
 
-                    context.goNamedAuth('PdfViewerPage', context.mounted);
+                    context.goNamedAuth(
+                        'LanguageSelectorPage', context.mounted);
                   },
-                  text: 'Sign UP',
+                  text: FFLocalizations.of(context).getText(
+                    'o5d9g6k6' /* Sign UP */,
+                  ),
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:

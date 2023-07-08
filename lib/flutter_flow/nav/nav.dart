@@ -77,14 +77,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? PdfViewerPageWidget() : LoginPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? LanguageSelectorPageWidget()
+          : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? PdfViewerPageWidget()
+              ? LanguageSelectorPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -228,6 +229,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ProgressBarPage',
           path: '/progressBarPage',
           builder: (context, params) => ProgressBarPageWidget(),
+        ),
+        FFRoute(
+          name: 'LanguageSelectorPage',
+          path: '/languageSelectorPage',
+          builder: (context, params) => LanguageSelectorPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

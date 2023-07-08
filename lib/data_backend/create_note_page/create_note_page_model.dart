@@ -16,7 +16,9 @@ class CreateNotePageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? idControllerValidator;
   String? _idControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        '9a639bbp' /* Field is required */,
+      );
     }
 
     if (val.length < 1) {
@@ -31,7 +33,9 @@ class CreateNotePageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? titleFieldControllerValidator;
   String? _titleFieldControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        'n7m2no6r' /* Field is required */,
+      );
     }
 
     if (val.length < 2) {
@@ -46,7 +50,9 @@ class CreateNotePageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? desFieldControllerValidator;
   String? _desFieldControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        '5vxoefta' /* Field is required */,
+      );
     }
 
     if (val.length < 2) {

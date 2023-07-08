@@ -44,7 +44,9 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'ListTile Page',
+            FFLocalizations.of(context).getText(
+              'go7tgu88' /* ListTile Page */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -67,12 +69,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                 children: [
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'qdoj3afy' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'edx54wb1' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -85,12 +91,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'i8bnw05t' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'tzqoye5g' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -103,12 +113,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'p613b2xc' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'cmdncaf6' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -121,12 +135,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'o8boxmd4' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'm0sf4phk' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -139,12 +157,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'fyd9k9hr' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        '6iawryyb' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -157,12 +179,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'kvc1qsw8' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        '29rhlcxd' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -175,12 +201,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'a341zt76' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        '066aetm3' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -193,12 +223,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'muir5pxa' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'f0sprbxx' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -211,12 +245,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        'xgxebbr3' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'flgqwjtv' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -229,12 +267,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        '4itiodkl' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        'labncibx' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(
@@ -247,12 +289,16 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                   ),
                   ListTile(
                     title: Text(
-                      'Name',
+                      FFLocalizations.of(context).getText(
+                        '521mr3ez' /* Name */,
+                      ),
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     subtitle: Text(
-                      'Chatting here...',
+                      FFLocalizations.of(context).getText(
+                        '3ext8awl' /* Chatting here... */,
+                      ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),
                     trailing: Icon(

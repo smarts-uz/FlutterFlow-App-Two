@@ -49,7 +49,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Your notes',
+                FFLocalizations.of(context).getText(
+                  'eb3u478v' /* Your notes */,
+                ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

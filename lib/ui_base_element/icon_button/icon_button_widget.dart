@@ -49,7 +49,9 @@ class _IconButtonWidgetState extends State<IconButtonWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'IconButton',
+                FFLocalizations.of(context).getText(
+                  'iglrfiuj' /* IconButton */,
+                ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

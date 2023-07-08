@@ -44,7 +44,9 @@ class _ImagePageWidgetState extends State<ImagePageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Image',
+            FFLocalizations.of(context).getText(
+              'cv4azlvz' /* Image */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

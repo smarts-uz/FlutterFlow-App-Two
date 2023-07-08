@@ -45,7 +45,9 @@ class _ProgressBarPageWidgetState extends State<ProgressBarPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'ProgressBar',
+            FFLocalizations.of(context).getText(
+              '3h3pvfac' /* ProgressBar */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -66,7 +68,9 @@ class _ProgressBarPageWidgetState extends State<ProgressBarPageWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Storage',
+                  FFLocalizations.of(context).getText(
+                    'hg1mijww' /* Storage */,
+                  ),
                   style: FlutterFlowTheme.of(context).titleLarge,
                 ),
                 CircularPercentIndicator(
@@ -77,12 +81,16 @@ class _ProgressBarPageWidgetState extends State<ProgressBarPageWidget> {
                   progressColor: FlutterFlowTheme.of(context).error,
                   backgroundColor: FlutterFlowTheme.of(context).accent4,
                   center: Text(
-                    '90%',
+                    FFLocalizations.of(context).getText(
+                      'hzc0aile' /* 90% */,
+                    ),
                     style: FlutterFlowTheme.of(context).headlineSmall,
                   ),
                 ),
                 Text(
-                  'Loading...',
+                  FFLocalizations.of(context).getText(
+                    'myuzzrda' /* Loading... */,
+                  ),
                   style: FlutterFlowTheme.of(context).titleLarge,
                 ),
                 Padding(
@@ -95,7 +103,9 @@ class _ProgressBarPageWidgetState extends State<ProgressBarPageWidget> {
                     progressColor: FlutterFlowTheme.of(context).primary,
                     backgroundColor: Color(0xFFFEC92D),
                     center: Text(
-                      '20%',
+                      FFLocalizations.of(context).getText(
+                        '2dxa77cf' /* 20% */,
+                      ),
                       style: FlutterFlowTheme.of(context).headlineSmall,
                     ),
                     barRadius: Radius.circular(20.0),

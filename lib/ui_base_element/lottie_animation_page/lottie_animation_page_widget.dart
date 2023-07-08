@@ -46,7 +46,9 @@ class _LottieAnimationPageWidgetState extends State<LottieAnimationPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'LottieAnimation',
+            FFLocalizations.of(context).getText(
+              '6xntu4mv' /* LottieAnimation */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

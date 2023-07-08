@@ -47,7 +47,9 @@ class _RiveAnimationPageWidgetState extends State<RiveAnimationPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'RiveAnimation',
+            FFLocalizations.of(context).getText(
+              'usddc8nb' /* RiveAnimation */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

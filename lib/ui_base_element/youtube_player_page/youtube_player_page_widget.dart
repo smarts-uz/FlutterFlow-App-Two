@@ -47,7 +47,9 @@ class _YoutubePlayerPageWidgetState extends State<YoutubePlayerPageWidget> {
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
             title: Text(
-              'YoutubePlayer',
+              FFLocalizations.of(context).getText(
+                '8uj5hpcq' /* YoutubePlayer */,
+              ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Outfit',
                     color: Colors.white,

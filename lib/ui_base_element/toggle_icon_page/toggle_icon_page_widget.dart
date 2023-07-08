@@ -46,7 +46,9 @@ class _ToggleIconPageWidgetState extends State<ToggleIconPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'ToggleIcon',
+            FFLocalizations.of(context).getText(
+              'x8s8df0f' /* ToggleIcon */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -69,7 +71,9 @@ class _ToggleIconPageWidgetState extends State<ToggleIconPageWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Account Settings',
+                      FFLocalizations.of(context).getText(
+                        'r4heb00v' /* Account Settings */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
                     ToggleIcon(

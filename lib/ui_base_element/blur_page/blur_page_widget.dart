@@ -45,7 +45,9 @@ class _BlurPageWidgetState extends State<BlurPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Blur',
+            FFLocalizations.of(context).getText(
+              'wob7744r' /* Blur */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -84,7 +86,9 @@ class _BlurPageWidgetState extends State<BlurPageWidget> {
                       child: Align(
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
-                          'The picture',
+                          FFLocalizations.of(context).getText(
+                            'rnz1frnv' /* The picture */,
+                          ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',

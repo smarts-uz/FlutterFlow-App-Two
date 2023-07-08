@@ -44,7 +44,9 @@ class _SwitchPageWidgetState extends State<SwitchPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Switch and SwitchListTile',
+            FFLocalizations.of(context).getText(
+              '2dm9mwwp' /* Switch and SwitchListTile */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -123,11 +125,15 @@ class _SwitchPageWidgetState extends State<SwitchPageWidget> {
                     setState(() => _model.switchListTileValue1 = newValue!);
                   },
                   title: Text(
-                    'Video',
+                    FFLocalizations.of(context).getText(
+                      'hbwj8gg7' /* Video */,
+                    ),
                     style: FlutterFlowTheme.of(context).titleLarge,
                   ),
                   subtitle: Text(
-                    'Auto download',
+                    FFLocalizations.of(context).getText(
+                      'l5q8wsml' /* Auto download */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium,
                   ),
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
@@ -142,11 +148,15 @@ class _SwitchPageWidgetState extends State<SwitchPageWidget> {
                     setState(() => _model.switchListTileValue2 = newValue!);
                   },
                   title: Text(
-                    'DarkMode',
+                    FFLocalizations.of(context).getText(
+                      'xdz6b667' /* DarkMode */,
+                    ),
                     style: FlutterFlowTheme.of(context).titleLarge,
                   ),
                   subtitle: Text(
-                    'Turn ON/OFF',
+                    FFLocalizations.of(context).getText(
+                      'n761ykda' /* Turn ON/OFF */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium,
                   ),
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,

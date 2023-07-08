@@ -55,7 +55,9 @@ class _UpdatenoteWidgetState extends State<UpdatenoteWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Page Title',
+            FFLocalizations.of(context).getText(
+              '0lfgsr43' /* Page Title */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -78,7 +80,9 @@ class _UpdatenoteWidgetState extends State<UpdatenoteWidget> {
                   autofocus: true,
                   obscureText: false,
                   decoration: InputDecoration(
-                    labelText: 'title',
+                    labelText: FFLocalizations.of(context).getText(
+                      'ex1e0egg' /* title */,
+                    ),
                     labelStyle: FlutterFlowTheme.of(context).labelMedium,
                     hintStyle: FlutterFlowTheme.of(context).labelMedium,
                     enabledBorder: UnderlineInputBorder(
@@ -122,7 +126,9 @@ class _UpdatenoteWidgetState extends State<UpdatenoteWidget> {
                   autofocus: true,
                   obscureText: false,
                   decoration: InputDecoration(
-                    labelText: 'Description',
+                    labelText: FFLocalizations.of(context).getText(
+                      'lg5qsvk3' /* Description */,
+                    ),
                     labelStyle: FlutterFlowTheme.of(context).labelMedium,
                     hintStyle: FlutterFlowTheme.of(context).labelMedium,
                     enabledBorder: UnderlineInputBorder(
@@ -171,7 +177,9 @@ class _UpdatenoteWidgetState extends State<UpdatenoteWidget> {
 
                   context.pushNamed('HomePage');
                 },
-                text: 'Update',
+                text: FFLocalizations.of(context).getText(
+                  '5n6exums' /* Update */,
+                ),
                 options: FFButtonOptions(
                   height: 40.0,
                   padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),

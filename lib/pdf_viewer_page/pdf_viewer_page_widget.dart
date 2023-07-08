@@ -45,7 +45,9 @@ class _PdfViewerPageWidgetState extends State<PdfViewerPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'PdfViewer',
+            FFLocalizations.of(context).getText(
+              'o8h26c5v' /* PdfViewer */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,

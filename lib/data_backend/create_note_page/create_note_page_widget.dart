@@ -68,7 +68,9 @@ class _CreateNotePageWidgetState extends State<CreateNotePageWidget> {
                 ),
               ),
               Text(
-                'Create  note',
+                FFLocalizations.of(context).getText(
+                  'i84xa3pe' /* Create  note */,
+                ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -97,7 +99,9 @@ class _CreateNotePageWidgetState extends State<CreateNotePageWidget> {
                     autofocus: true,
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'ID',
+                      labelText: FFLocalizations.of(context).getText(
+                        '1ip6hknm' /* ID */,
+                      ),
                       labelStyle: FlutterFlowTheme.of(context).labelMedium,
                       hintStyle: FlutterFlowTheme.of(context).labelMedium,
                       enabledBorder: UnderlineInputBorder(
@@ -144,7 +148,9 @@ class _CreateNotePageWidgetState extends State<CreateNotePageWidget> {
                     autofocus: true,
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Title',
+                      labelText: FFLocalizations.of(context).getText(
+                        '2vhd3v5s' /* Title */,
+                      ),
                       labelStyle: FlutterFlowTheme.of(context).labelMedium,
                       hintStyle: FlutterFlowTheme.of(context).labelMedium,
                       enabledBorder: UnderlineInputBorder(
@@ -191,7 +197,9 @@ class _CreateNotePageWidgetState extends State<CreateNotePageWidget> {
                     autofocus: true,
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Descripton',
+                      labelText: FFLocalizations.of(context).getText(
+                        'okgcqfqg' /* Descripton */,
+                      ),
                       labelStyle: FlutterFlowTheme.of(context).labelMedium,
                       hintStyle: FlutterFlowTheme.of(context).labelMedium,
                       enabledBorder: UnderlineInputBorder(
@@ -251,7 +259,9 @@ class _CreateNotePageWidgetState extends State<CreateNotePageWidget> {
                       }
                       context.pushNamed('HomePage');
                     },
-                    text: 'Add note',
+                    text: FFLocalizations.of(context).getText(
+                      'mgvvtaip' /* Add note */,
+                    ),
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:

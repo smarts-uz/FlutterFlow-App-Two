@@ -46,7 +46,9 @@ class _CheckboxListTilePageWidgetState
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'CheckboxListTile',
+            FFLocalizations.of(context).getText(
+              'ihocbjl9' /* CheckboxListTile */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -86,11 +88,15 @@ class _CheckboxListTilePageWidgetState
                             () => _model.checkboxListTileValue1 = newValue!);
                       },
                       title: Text(
-                        'TASK',
+                        FFLocalizations.of(context).getText(
+                          '2o65pq5u' /* TASK */,
+                        ),
                         style: FlutterFlowTheme.of(context).titleLarge,
                       ),
                       subtitle: Text(
-                        'Description',
+                        FFLocalizations.of(context).getText(
+                          'e0ico4xr' /* Description */,
+                        ),
                         style: FlutterFlowTheme.of(context).labelMedium,
                       ),
                       tileColor:
@@ -120,11 +126,15 @@ class _CheckboxListTilePageWidgetState
                             () => _model.checkboxListTileValue2 = newValue!);
                       },
                       title: Text(
-                        'TASK',
+                        FFLocalizations.of(context).getText(
+                          '1n5p0wv0' /* TASK */,
+                        ),
                         style: FlutterFlowTheme.of(context).titleLarge,
                       ),
                       subtitle: Text(
-                        'Description',
+                        FFLocalizations.of(context).getText(
+                          'tgb3w85j' /* Description */,
+                        ),
                         style: FlutterFlowTheme.of(context).labelMedium,
                       ),
                       tileColor:
@@ -154,11 +164,15 @@ class _CheckboxListTilePageWidgetState
                             () => _model.checkboxListTileValue3 = newValue!);
                       },
                       title: Text(
-                        'TASK',
+                        FFLocalizations.of(context).getText(
+                          '2wwma78a' /* TASK */,
+                        ),
                         style: FlutterFlowTheme.of(context).titleLarge,
                       ),
                       subtitle: Text(
-                        'Description',
+                        FFLocalizations.of(context).getText(
+                          'anww85a9' /* Description */,
+                        ),
                         style: FlutterFlowTheme.of(context).labelMedium,
                       ),
                       tileColor:

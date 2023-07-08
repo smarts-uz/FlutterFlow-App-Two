@@ -45,7 +45,9 @@ class _RichTextPageWidgetState extends State<RichTextPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'RichText',
+            FFLocalizations.of(context).getText(
+              'x7zy60j4' /* RichText */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -68,7 +70,9 @@ class _RichTextPageWidgetState extends State<RichTextPageWidget> {
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        text: 'This page is ',
+                        text: FFLocalizations.of(context).getText(
+                          'mn9pk61y' /* This page is  */,
+                        ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
                               color: FlutterFlowTheme.of(context).primary,
@@ -76,13 +80,17 @@ class _RichTextPageWidgetState extends State<RichTextPageWidget> {
                             ),
                       ),
                       TextSpan(
-                        text: ' RichText.',
+                        text: FFLocalizations.of(context).getText(
+                          'ap8vv1fc' /*  RichText. */,
+                        ),
                         style: TextStyle(
                           fontSize: 30.0,
                         ),
                       ),
                       TextSpan(
-                        text: ' Testing ',
+                        text: FFLocalizations.of(context).getText(
+                          'w329qvji' /*  Testing  */,
+                        ),
                         style: TextStyle(
                           color: Color(0xFFFEC92D),
                           fontSize: 24.0,

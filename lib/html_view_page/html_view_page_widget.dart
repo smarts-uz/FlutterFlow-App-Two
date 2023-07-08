@@ -45,7 +45,9 @@ class _HtmlViewPageWidgetState extends State<HtmlViewPageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'HtmlView',
+            FFLocalizations.of(context).getText(
+              'gebznai9' /* HtmlView */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -68,7 +70,9 @@ class _HtmlViewPageWidgetState extends State<HtmlViewPageWidget> {
                     launchURL(url!),
               ),
               Text(
-                'This html code ',
+                FFLocalizations.of(context).getText(
+                  'zlrfw5d6' /* This html code  */,
+                ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: 'Readex Pro',
                       color: Color(0xFFFEC92D),
@@ -76,7 +80,12 @@ class _HtmlViewPageWidgetState extends State<HtmlViewPageWidget> {
                     ),
               ),
               Text(
-                '<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n<h3>This is heading three in html.</h3>\n<p>The image below is a link. Try to click on it.</p>\n\n<a href=\"default.asp\"><img src=\"smiley.gif\" alt=\"HTML tutorial\" style=\"width:42px;height:42px;\"></a>\n<p><a href=\"https://www.Youtube.com/\"><img src=\"https://www.tutorialspoint.com/assets/questions/media/426142-1668760872.png\" style=\"width:50px;height:50px;\"></a></p>\n\n</body>\n</html>',
+                FFLocalizations.of(context).getText(
+                  '2e57jepp' /* <html>
+<head>
+<title>Page Titl... */
+                  ,
+                ),
                 style: FlutterFlowTheme.of(context).bodyMedium,
               ),
             ],

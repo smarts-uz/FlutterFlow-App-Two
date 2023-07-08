@@ -17,7 +17,9 @@ class RegisterPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? textController1Validator;
   String? _textController1Validator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        'sx1odwil' /* Field is required */,
+      );
     }
 
     if (val.length < 2) {
@@ -32,11 +34,15 @@ class RegisterPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? emailTextControllerValidator;
   String? _emailTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        'k16do29g' /* Field is required */,
+      );
     }
 
     if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
-      return 'You must use @ this character.';
+      return FFLocalizations.of(context).getText(
+        'ih3l3xd3' /* You must use @ this character. */,
+      );
     }
     return null;
   }
@@ -47,11 +53,15 @@ class RegisterPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
   String? _passwordTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        'v7r4vkd4' /* Field is required */,
+      );
     }
 
     if (val.length < 8) {
-      return 'Password requires at least 8 charachters.';
+      return FFLocalizations.of(context).getText(
+        'aeftmfkn' /* Password requires at least 8 c... */,
+      );
     }
 
     return null;
@@ -65,11 +75,15 @@ class RegisterPageModel extends FlutterFlowModel {
   String? _confirmPasswordTextControllerValidator(
       BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return 'Field is required';
+      return FFLocalizations.of(context).getText(
+        '5dlbmfk9' /* Field is required */,
+      );
     }
 
     if (val.length < 8) {
-      return 'Password requires at least 8 charachters.';
+      return FFLocalizations.of(context).getText(
+        '5p661zex' /* Password requires at least 8 c... */,
+      );
     }
 
     return null;
