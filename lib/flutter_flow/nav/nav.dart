@@ -77,15 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? CheckboxListTilePageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? SwitchPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? CheckboxListTilePageWidget()
+              ? SwitchPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -169,6 +168,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CheckboxListTilePage',
           path: '/checkboxListTilePage',
           builder: (context, params) => CheckboxListTilePageWidget(),
+        ),
+        FFRoute(
+          name: 'SwitchPage',
+          path: '/switchPage',
+          builder: (context, params) => SwitchPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

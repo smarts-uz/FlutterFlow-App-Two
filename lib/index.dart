@@ -27,3 +27,5 @@ export '/ui_base_element/calendar_page/calendar_page_widget.dart'
     show CalendarPageWidget;
 export '/ui_base_element/checkbox_list_tile_page/checkbox_list_tile_page_widget.dart'
     show CheckboxListTilePageWidget;
+export '/ui_base_element/switch_page/switch_page_widget.dart'
+    show SwitchPageWidget;

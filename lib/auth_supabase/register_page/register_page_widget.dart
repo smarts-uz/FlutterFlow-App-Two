@@ -353,8 +353,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       'email': _model.emailTextController.text,
                     });
 
-                    context.goNamedAuth(
-                        'CheckboxListTilePage', context.mounted);
+                    context.goNamedAuth('SwitchPage', context.mounted);
                   },
                   text: 'Sign UP',
                   options: FFButtonOptions(
