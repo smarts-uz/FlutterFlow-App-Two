@@ -35,6 +35,8 @@ class _YoutubePlayerPageWidgetState extends State<YoutubePlayerPageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return YoutubeFullScreenWrapper(
       child: GestureDetector(
         onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),

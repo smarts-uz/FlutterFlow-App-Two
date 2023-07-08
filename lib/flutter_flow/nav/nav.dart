@@ -77,14 +77,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? SwitchPageWidget() : LoginPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? ToggleIconPageWidget()
+          : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? SwitchPageWidget()
+              ? ToggleIconPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -173,6 +174,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SwitchPage',
           path: '/switchPage',
           builder: (context, params) => SwitchPageWidget(),
+        ),
+        FFRoute(
+          name: 'ToggleIconPage',
+          path: '/toggleIconPage',
+          builder: (context, params) => ToggleIconPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

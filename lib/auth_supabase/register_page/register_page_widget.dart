@@ -41,6 +41,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
@@ -353,7 +355,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       'email': _model.emailTextController.text,
                     });
 
-                    context.goNamedAuth('SwitchPage', context.mounted);
+                    context.goNamedAuth('ToggleIconPage', context.mounted);
                   },
                   text: 'Sign UP',
                   options: FFButtonOptions(
