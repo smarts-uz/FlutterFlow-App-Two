@@ -77,14 +77,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? CalendarPageWidget() : LoginPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? CheckboxListTilePageWidget()
+          : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? CalendarPageWidget()
+              ? CheckboxListTilePageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -163,6 +164,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CalendarPage',
           path: '/calendarPage',
           builder: (context, params) => CalendarPageWidget(),
+        ),
+        FFRoute(
+          name: 'CheckboxListTilePage',
+          path: '/checkboxListTilePage',
+          builder: (context, params) => CheckboxListTilePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

@@ -25,3 +25,5 @@ export '/ui_base_element/youtube_player_page/youtube_player_page_widget.dart'
     show YoutubePlayerPageWidget;
 export '/ui_base_element/calendar_page/calendar_page_widget.dart'
     show CalendarPageWidget;
+export '/ui_base_element/checkbox_list_tile_page/checkbox_list_tile_page_widget.dart'
+    show CheckboxListTilePageWidget;

@@ -201,7 +201,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('CalendarPage', context.mounted);
+                    context.goNamedAuth(
+                        'CheckboxListTilePage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(
