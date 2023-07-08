@@ -263,60 +263,6 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
                     tileColor: FlutterFlowTheme.of(context).secondaryBackground,
                     dense: false,
                   ),
-                  ListTile(
-                    title: Text(
-                      'Name',
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      'Chatting here...',
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      'Name',
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      'Chatting here...',
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      'Name',
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      'Chatting here...',
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
                 ],
               ),
             ],

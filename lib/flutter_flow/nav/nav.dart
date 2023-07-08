@@ -78,14 +78,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? ToggleIconPageWidget()
+          ? AudioPlayerPageWidget()
           : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? ToggleIconPageWidget()
+              ? AudioPlayerPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -179,6 +179,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ToggleIconPage',
           path: '/toggleIconPage',
           builder: (context, params) => ToggleIconPageWidget(),
+        ),
+        FFRoute(
+          name: 'AudioPlayerPage',
+          path: '/audioPlayerPage',
+          builder: (context, params) => AudioPlayerPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

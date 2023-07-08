@@ -29,5 +29,7 @@ export '/ui_base_element/checkbox_list_tile_page/checkbox_list_tile_page_widget.
     show CheckboxListTilePageWidget;
 export '/ui_base_element/switch_page/switch_page_widget.dart'
     show SwitchPageWidget;
-export '/toggle_icon_page/toggle_icon_page_widget.dart'
+export '/ui_base_element/toggle_icon_page/toggle_icon_page_widget.dart'
     show ToggleIconPageWidget;
+export '/ui_base_element/audio_player_page/audio_player_page_widget.dart'
+    show AudioPlayerPageWidget;
