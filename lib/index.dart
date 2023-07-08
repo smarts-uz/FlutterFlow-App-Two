@@ -44,3 +44,4 @@ export '/transform_page/transform_page_widget.dart' show TransformPageWidget;
 export '/rive_animation_page/rive_animation_page_widget.dart'
     show RiveAnimationPageWidget;
 export '/html_view_page/html_view_page_widget.dart' show HtmlViewPageWidget;
+export '/pdf_viewer_page/pdf_viewer_page_widget.dart' show PdfViewerPageWidget;

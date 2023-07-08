@@ -78,13 +78,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HtmlViewPageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? PdfViewerPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? HtmlViewPageWidget()
+              ? PdfViewerPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -218,6 +218,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'HtmlViewPage',
           path: '/htmlViewPage',
           builder: (context, params) => HtmlViewPageWidget(),
+        ),
+        FFRoute(
+          name: 'PdfViewerPage',
+          path: '/pdfViewerPage',
+          builder: (context, params) => PdfViewerPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('HtmlViewPage', context.mounted);
+                    context.goNamedAuth('PdfViewerPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(
