@@ -13,3 +13,5 @@ export '/ui_base_element/image_page/image_page_widget.dart'
 export '/ui_base_element/circle_image/circle_image_widget.dart'
     show CircleImageWidget;
 export '/ui_base_element/icon_page/icon_page_widget.dart' show IconPageWidget;
+export '/ui_base_element/button_page/button_page_widget.dart'
+    show ButtonPageWidget;
