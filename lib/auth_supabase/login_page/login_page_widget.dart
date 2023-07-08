@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('StaticMapPage', context.mounted);
+                    context.goNamedAuth('LottieAnimationPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

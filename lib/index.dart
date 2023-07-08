@@ -37,3 +37,5 @@ export '/ui_base_element/web_view_page/web_view_page_widget.dart'
     show WebViewPageWidget;
 export '/ui_base_element/static_map_page/static_map_page_widget.dart'
     show StaticMapPageWidget;
+export '/lottie_animation_page/lottie_animation_page_widget.dart'
+    show LottieAnimationPageWidget;

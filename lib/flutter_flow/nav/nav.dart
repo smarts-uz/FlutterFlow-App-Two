@@ -77,14 +77,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? StaticMapPageWidget() : LoginPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? LottieAnimationPageWidget()
+          : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? StaticMapPageWidget()
+              ? LottieAnimationPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -193,6 +194,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'StaticMapPage',
           path: '/staticMapPage',
           builder: (context, params) => StaticMapPageWidget(),
+        ),
+        FFRoute(
+          name: 'LottieAnimationPage',
+          path: '/lottieAnimationPage',
+          builder: (context, params) => LottieAnimationPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
