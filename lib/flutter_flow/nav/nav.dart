@@ -223,6 +223,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'PdfViewerPage',
           path: '/pdfViewerPage',
           builder: (context, params) => PdfViewerPageWidget(),
+        ),
+        FFRoute(
+          name: 'ProgressBarPage',
+          path: '/progressBarPage',
+          builder: (context, params) => ProgressBarPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

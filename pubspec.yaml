@@ -53,6 +53,7 @@ dependencies:
   path_provider_foundation: 2.2.2
   path_provider_platform_interface: 2.0.6
   pdfx: 2.3.0
+  percent_indicator: 4.2.2
   provider: 6.0.4
   rive: 0.10.3
   rive_common: 0.0.6

@@ -45,3 +45,5 @@ export '/rive_animation_page/rive_animation_page_widget.dart'
     show RiveAnimationPageWidget;
 export '/html_view_page/html_view_page_widget.dart' show HtmlViewPageWidget;
 export '/pdf_viewer_page/pdf_viewer_page_widget.dart' show PdfViewerPageWidget;
+export '/progress_bar_page/progress_bar_page_widget.dart'
+    show ProgressBarPageWidget;
