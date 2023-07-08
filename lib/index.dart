@@ -23,3 +23,5 @@ export '/ui_base_element/video_player_page/video_player_page_widget.dart'
     show VideoPlayerPageWidget;
 export '/ui_base_element/youtube_player_page/youtube_player_page_widget.dart'
     show YoutubePlayerPageWidget;
+export '/ui_base_element/calendar_page/calendar_page_widget.dart'
+    show CalendarPageWidget;

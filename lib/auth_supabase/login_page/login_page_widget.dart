@@ -201,7 +201,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('YoutubePlayerPage', context.mounted);
+                    context.goNamedAuth('CalendarPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

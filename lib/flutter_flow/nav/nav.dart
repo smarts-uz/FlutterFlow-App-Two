@@ -77,15 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? YoutubePlayerPageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? CalendarPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? YoutubePlayerPageWidget()
+              ? CalendarPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -159,6 +158,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'YoutubePlayerPage',
           path: '/youtubePlayerPage',
           builder: (context, params) => YoutubePlayerPageWidget(),
+        ),
+        FFRoute(
+          name: 'CalendarPage',
+          path: '/calendarPage',
+          builder: (context, params) => CalendarPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
