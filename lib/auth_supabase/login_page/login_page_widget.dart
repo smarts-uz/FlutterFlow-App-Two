@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('LottieAnimationPage', context.mounted);
+                    context.goNamedAuth('BlurPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

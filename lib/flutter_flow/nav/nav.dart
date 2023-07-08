@@ -77,16 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? LottieAnimationPageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? BlurPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? LottieAnimationPageWidget()
-              : LoginPageWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? BlurPageWidget() : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -199,6 +197,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'LottieAnimationPage',
           path: '/lottieAnimationPage',
           builder: (context, params) => LottieAnimationPageWidget(),
+        ),
+        FFRoute(
+          name: 'BlurPage',
+          path: '/blurPage',
+          builder: (context, params) => BlurPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
