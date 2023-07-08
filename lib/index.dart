@@ -33,3 +33,5 @@ export '/ui_base_element/toggle_icon_page/toggle_icon_page_widget.dart'
     show ToggleIconPageWidget;
 export '/ui_base_element/audio_player_page/audio_player_page_widget.dart'
     show AudioPlayerPageWidget;
+export '/ui_base_element/web_view_page/web_view_page_widget.dart'
+    show WebViewPageWidget;

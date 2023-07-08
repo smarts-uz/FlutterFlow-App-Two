@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('AudioPlayerPage', context.mounted);
+                    context.goNamedAuth('WebViewPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

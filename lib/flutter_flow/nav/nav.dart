@@ -77,15 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? AudioPlayerPageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? WebViewPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? AudioPlayerPageWidget()
+              ? WebViewPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -184,6 +183,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'AudioPlayerPage',
           path: '/audioPlayerPage',
           builder: (context, params) => AudioPlayerPageWidget(),
+        ),
+        FFRoute(
+          name: 'WebViewPage',
+          path: '/webViewPage',
+          builder: (context, params) => WebViewPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
