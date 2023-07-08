@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('RiveAnimationPage', context.mounted);
+                    context.goNamedAuth('HtmlViewPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

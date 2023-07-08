@@ -77,15 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? RiveAnimationPageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? HtmlViewPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? RiveAnimationPageWidget()
+              ? HtmlViewPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -214,6 +213,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'RiveAnimationPage',
           path: '/riveAnimationPage',
           builder: (context, params) => RiveAnimationPageWidget(),
+        ),
+        FFRoute(
+          name: 'HtmlViewPage',
+          path: '/htmlViewPage',
+          builder: (context, params) => HtmlViewPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
