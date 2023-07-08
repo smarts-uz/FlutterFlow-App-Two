@@ -1029,12 +1029,30 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Привет',
     },
     'trnxzo2h': {
-      'uz': '',
+      'uz': 'LanguageSelector',
       'en': '',
       'ru': '',
     },
     'xxnqkshm': {
       'uz': '',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // BadgePage
+  {
+    '4an3t1zt': {
+      'uz': 'Badge',
+      'en': '',
+      'ru': '',
+    },
+    'yvxirs4j': {
+      'uz': '8',
+      'en': '',
+      'ru': '',
+    },
+    'y14mcqqn': {
+      'uz': 'Home',
       'en': '',
       'ru': '',
     },

@@ -77,16 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? LanguageSelectorPageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? BadgePageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? LanguageSelectorPageWidget()
-              : LoginPageWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? BadgePageWidget() : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -234,6 +232,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'LanguageSelectorPage',
           path: '/languageSelectorPage',
           builder: (context, params) => LanguageSelectorPageWidget(),
+        ),
+        FFRoute(
+          name: 'BadgePage',
+          path: '/badgePage',
+          builder: (context, params) => BadgePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

@@ -40,12 +40,17 @@ export '/ui_base_element/static_map_page/static_map_page_widget.dart'
 export '/ui_base_element/lottie_animation_page/lottie_animation_page_widget.dart'
     show LottieAnimationPageWidget;
 export '/ui_base_element/blur_page/blur_page_widget.dart' show BlurPageWidget;
-export '/transform_page/transform_page_widget.dart' show TransformPageWidget;
-export '/rive_animation_page/rive_animation_page_widget.dart'
+export '/ui_base_element/transform_page/transform_page_widget.dart'
+    show TransformPageWidget;
+export '/ui_base_element/rive_animation_page/rive_animation_page_widget.dart'
     show RiveAnimationPageWidget;
-export '/html_view_page/html_view_page_widget.dart' show HtmlViewPageWidget;
-export '/pdf_viewer_page/pdf_viewer_page_widget.dart' show PdfViewerPageWidget;
-export '/progress_bar_page/progress_bar_page_widget.dart'
+export '/ui_base_element/html_view_page/html_view_page_widget.dart'
+    show HtmlViewPageWidget;
+export '/ui_base_element/pdf_viewer_page/pdf_viewer_page_widget.dart'
+    show PdfViewerPageWidget;
+export '/ui_base_element/progress_bar_page/progress_bar_page_widget.dart'
     show ProgressBarPageWidget;
 export '/language_selector_page/language_selector_page_widget.dart'
     show LanguageSelectorPageWidget;
+export '/ui_base_element/badge_page/badge_page_widget.dart'
+    show BadgePageWidget;

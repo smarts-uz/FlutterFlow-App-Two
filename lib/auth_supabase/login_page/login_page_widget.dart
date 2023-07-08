@@ -209,8 +209,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth(
-                        'LanguageSelectorPage', context.mounted);
+                    context.goNamedAuth('BadgePage', context.mounted);
                   },
                   text: FFLocalizations.of(context).getText(
                     'iqdlzjmm' /* Login */,

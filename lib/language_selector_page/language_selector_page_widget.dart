@@ -48,7 +48,7 @@ class _LanguageSelectorPageWidgetState
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              'trnxzo2h' /*  */,
+              'trnxzo2h' /* LanguageSelector */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
