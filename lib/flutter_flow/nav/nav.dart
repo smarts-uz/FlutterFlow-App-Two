@@ -78,13 +78,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? TimerPageWidget() : RegisterPageWidget(),
+          appStateNotifier.loggedIn ? HomePageWidget() : RegisterPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? TimerPageWidget()
+              ? HomePageWidget()
               : RegisterPageWidget(),
         ),
         FFRoute(
@@ -258,6 +258,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'UIBaseElement',
           path: '/uIBaseElement',
           builder: (context, params) => UIBaseElementWidget(),
+        ),
+        FFRoute(
+          name: 'TextFieldPage',
+          path: '/textFieldPage',
+          builder: (context, params) => TextFieldPageWidget(),
+        ),
+        FFRoute(
+          name: 'FormElementsPage',
+          path: '/formElementsPage',
+          builder: (context, params) => FormElementsPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

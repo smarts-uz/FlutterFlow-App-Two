@@ -62,3 +62,6 @@ export '/auth_supabase/retrieving_data_page/retrieving_data_page_widget.dart'
     show RetrievingDataPageWidget;
 export '/ui_base_element/u_i_base_element/u_i_base_element_widget.dart'
     show UIBaseElementWidget;
+export '/text_field_page/text_field_page_widget.dart' show TextFieldPageWidget;
+export '/form_elements_page/form_elements_page_widget.dart'
+    show FormElementsPageWidget;

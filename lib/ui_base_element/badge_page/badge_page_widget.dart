@@ -121,7 +121,7 @@ class _BadgePageWidgetState extends State<BadgePageWidget> {
                   badges.Badge(
                     badgeContent: Text(
                       FFLocalizations.of(context).getText(
-                        'cyoctbak' /* 1 */,
+                        '5u8p43l4' /* 1 */,
                       ),
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                             fontFamily: 'Readex Pro',

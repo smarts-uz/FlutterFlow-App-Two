@@ -113,8 +113,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'ru': '',
     },
-    'rxc6z6gm': {
+    'zj70zvch': {
       'uz': 'UiBaseElement',
+      'en': '',
+      'ru': '',
+    },
+    'l4efmxr4': {
+      'uz': 'UiFormElement',
       'en': '',
       'ru': '',
     },
@@ -1051,7 +1056,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'ru': '',
     },
-    'cyoctbak': {
+    '5u8p43l4': {
       'uz': '1',
       'en': '',
       'ru': '',
@@ -1069,7 +1074,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // ChartPage
   {
-    'm4hlafx9': {
+    'rouexgzx': {
       'uz': 'Name',
       'en': '',
       'ru': '',
@@ -1120,7 +1125,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'ru': '',
     },
-    'dhg6g67t': {
+    '5xs192hy': {
       'uz': 'Home',
       'en': '',
       'ru': '',
@@ -1128,147 +1133,188 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // UIBaseElement
   {
-    '3s5i18i4': {
+    'jaflkyua': {
       'uz': 'BadgePage',
       'en': '',
       'ru': '',
     },
-    '085gzjto': {
+    'm4mfrtel': {
       'uz': 'AudioPlayer',
       'en': '',
       'ru': '',
     },
-    'blwfg567': {
+    'q3dmwm0f': {
       'uz': 'Button',
       'en': '',
       'ru': '',
     },
-    '9bljeb2x': {
+    'pk90khlx': {
       'uz': 'Blur',
       'en': '',
       'ru': '',
     },
-    'jbo7oef2': {
+    'y7f87kiw': {
       'uz': 'Chart',
       'en': '',
       'ru': '',
     },
-    '24236xmv': {
+    'xqhr2so4': {
       'uz': 'Calendar',
       'en': '',
       'ru': '',
     },
-    '5ov8oppd': {
+    'hnmb7l88': {
       'uz': 'CricleImage',
       'en': '',
       'ru': '',
     },
-    'xafrhm4o': {
+    'aae3d9m7': {
       'uz': 'YoutubePlay',
       'en': '',
       'ru': '',
     },
-    'rf8x82za': {
+    'wd2xlp01': {
       'uz': 'HtmlView',
       'en': '',
       'ru': '',
     },
-    'chvabb7t': {
+    'htz6zts7': {
       'uz': 'WebView',
       'en': '',
       'ru': '',
     },
-    '3yhb9pb2': {
+    '7hgo80gc': {
       'uz': 'IconBUtton',
       'en': '',
       'ru': '',
     },
-    'oxz9tx8y': {
+    'uva1lkj3': {
       'uz': 'VideoPlayer',
       'en': '',
       'ru': '',
     },
-    'kkdzhoi3': {
+    'rohh49y6': {
       'uz': 'Icon',
       'en': '',
       'ru': '',
     },
-    'd9rjn8pd': {
+    'ome40bq9': {
       'uz': 'Transform',
       'en': '',
       'ru': '',
     },
-    'pj36zxna': {
+    'ge9hmshs': {
       'uz': 'Image',
       'en': '',
       'ru': '',
     },
-    'wy8t2rgp': {
+    'szcoafon': {
       'uz': 'ToggleIcon',
       'en': '',
       'ru': '',
     },
-    'eceyhjm1': {
+    '848fo6oa': {
       'uz': 'Language',
       'en': '',
       'ru': '',
     },
-    'qjxfe1pa': {
+    'y2h03oin': {
       'uz': 'ListTile',
       'en': '',
       'ru': '',
     },
-    'rdhm1hne': {
+    'v02o63sc': {
       'uz': 'Lottie',
       'en': '',
       'ru': '',
     },
-    '01q4jt7k': {
+    '3wmmngmo': {
       'uz': 'PdfViewer',
       'en': '',
       'ru': '',
     },
-    'hqq56cz6': {
+    'g9arbbul': {
       'uz': 'ProgressBar',
       'en': '',
       'ru': '',
     },
-    '4lku0hw8': {
+    '0rua001l': {
       'uz': 'RichText',
       'en': '',
       'ru': '',
     },
-    'dxjenchu': {
+    'nlltwb91': {
       'uz': 'RiveAnimat',
       'en': '',
       'ru': '',
     },
-    'dzcck26k': {
+    '72qte5s9': {
       'uz': 'StaticMap',
       'en': '',
       'ru': '',
     },
-    '4wlt1y5h': {
+    't58m1q8k': {
       'uz': 'CheckboxList',
       'en': '',
       'ru': '',
     },
-    '81qg9vuc': {
+    '7org0a6x': {
       'uz': 'Switch',
       'en': '',
       'ru': '',
     },
-    'ha6ycvze': {
+    'j7p1a5y8': {
       'uz': 'Timer',
       'en': '',
       'ru': '',
     },
-    'iubhosj4': {
+    '8idjqcp4': {
       'uz': 'UiBaseElement',
       'en': '',
       'ru': '',
     },
-    'rdfyafxd': {
+    'c825sx6g': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // TextFieldPage
+  {
+    'b0x8aldj': {
+      'uz': 'Name',
+      'en': '',
+      'ru': '',
+    },
+    'gndujjwn': {
+      'uz': 'Password',
+      'en': '',
+      'ru': '',
+    },
+    'l6mf2eew': {
+      'uz': 'TextField',
+      'en': '',
+      'ru': '',
+    },
+    '9owhj72p': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // FormElementsPage
+  {
+    '3azu1zx2': {
+      'uz': 'TextField',
+      'en': '',
+      'ru': '',
+    },
+    'c2jnzlo0': {
+      'uz': 'Form Elements',
+      'en': '',
+      'ru': '',
+    },
+    '5kxb60fh': {
       'uz': 'Home',
       'en': '',
       'ru': '',

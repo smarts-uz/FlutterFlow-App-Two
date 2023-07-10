@@ -209,7 +209,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('TimerPage', context.mounted);
+                    context.goNamedAuth('HomePage', context.mounted);
                   },
                   text: FFLocalizations.of(context).getText(
                     'iqdlzjmm' /* Login */,
