@@ -56,10 +56,19 @@ class _PinCodePageWidgetState extends State<PinCodePageWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              Icon(
-                Icons.arrow_back_sharp,
-                color: FlutterFlowTheme.of(context).primaryBackground,
-                size: 24.0,
+              InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.safePop();
+                },
+                child: Icon(
+                  Icons.arrow_back_sharp,
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                  size: 24.0,
+                ),
               ),
             ],
           ),
