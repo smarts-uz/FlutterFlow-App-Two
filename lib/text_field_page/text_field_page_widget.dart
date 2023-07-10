@@ -52,7 +52,7 @@ class _TextFieldPageWidgetState extends State<TextFieldPageWidget> {
             children: [
               Text(
                 FFLocalizations.of(context).getText(
-                  'l6mf2eew' /* TextField */,
+                  '2mca56kq' /* TextField */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -97,7 +97,7 @@ class _TextFieldPageWidgetState extends State<TextFieldPageWidget> {
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: FFLocalizations.of(context).getText(
-                          'b0x8aldj' /* Name */,
+                          'g9pm3n51' /* Name */,
                         ),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
@@ -156,7 +156,7 @@ class _TextFieldPageWidgetState extends State<TextFieldPageWidget> {
                     obscureText: !_model.passwordVisibility,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(
-                        'gndujjwn' /* Password */,
+                        'c8jpxzgu' /* Password */,
                       ),
                       labelStyle: FlutterFlowTheme.of(context).labelMedium,
                       hintStyle: FlutterFlowTheme.of(context).labelMedium,

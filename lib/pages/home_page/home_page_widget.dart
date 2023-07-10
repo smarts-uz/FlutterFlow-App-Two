@@ -95,7 +95,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     context.pushNamed('UIBaseElement');
                   },
                   text: FFLocalizations.of(context).getText(
-                    'zj70zvch' /* UiBaseElement */,
+                    'r406qoz2' /* UiBaseElement */,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,
@@ -124,7 +124,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     context.pushNamed('FormElementsPage');
                   },
                   text: FFLocalizations.of(context).getText(
-                    'l4efmxr4' /* UiFormElement */,
+                    'krdsd10f' /* UiFormElement */,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,

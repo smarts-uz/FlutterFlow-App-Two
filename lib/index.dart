@@ -65,3 +65,4 @@ export '/ui_base_element/u_i_base_element/u_i_base_element_widget.dart'
 export '/text_field_page/text_field_page_widget.dart' show TextFieldPageWidget;
 export '/form_elements_page/form_elements_page_widget.dart'
     show FormElementsPageWidget;
+export '/drop_down_page/drop_down_page_widget.dart' show DropDownPageWidget;

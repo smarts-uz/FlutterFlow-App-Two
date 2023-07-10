@@ -64,7 +64,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
               ),
               Text(
                 FFLocalizations.of(context).getText(
-                  '8idjqcp4' /* UiBaseElement */,
+                  'dew36im8' /* UiBaseElement */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -94,7 +94,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         context.pushNamed('BadgePage');
                       },
                       text: FFLocalizations.of(context).getText(
-                        'jaflkyua' /* BadgePage */,
+                        '9ybo4jnj' /* BadgePage */,
                       ),
                       options: FFButtonOptions(
                         width: 100.0,
@@ -125,7 +125,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('AudioPlayerPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'm4mfrtel' /* AudioPlayer */,
+                          'de4bcq12' /* AudioPlayer */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -163,7 +163,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('ButtonPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'q3dmwm0f' /* Button */,
+                          'b5glrqut' /* Button */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -195,7 +195,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('BlurPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'pk90khlx' /* Blur */,
+                          'm2zcslf3' /* Blur */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -233,7 +233,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('ChartPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'y7f87kiw' /* Chart */,
+                          'agrdwbz7' /* Chart */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -265,7 +265,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('CalendarPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'xqhr2so4' /* Calendar */,
+                          'odohvkxx' /* Calendar */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -303,7 +303,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('CircleImage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'hnmb7l88' /* CricleImage */,
+                          '4hbnibes' /* CricleImage */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -335,7 +335,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('YoutubePlayerPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'aae3d9m7' /* YoutubePlay */,
+                          'm4qvb1vg' /* YoutubePlay */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -373,7 +373,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('HtmlViewPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'wd2xlp01' /* HtmlView */,
+                          'okuyfcji' /* HtmlView */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -405,7 +405,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('WebViewPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'htz6zts7' /* WebView */,
+                          'ocd4fw6o' /* WebView */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -443,7 +443,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('IconButton');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '7hgo80gc' /* IconBUtton */,
+                          '9r0l1y1g' /* IconBUtton */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -475,7 +475,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('VideoPlayerPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'uva1lkj3' /* VideoPlayer */,
+                          'zwfxmaw2' /* VideoPlayer */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -513,7 +513,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('IconPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'rohh49y6' /* Icon */,
+                          'j5qozimf' /* Icon */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -545,7 +545,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('IconPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'ome40bq9' /* Transform */,
+                          '2s5ricol' /* Transform */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -583,7 +583,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('ImagePage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'ge9hmshs' /* Image */,
+                          'k7sxitoz' /* Image */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -615,7 +615,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('ToggleIconPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'szcoafon' /* ToggleIcon */,
+                          'cehfeov8' /* ToggleIcon */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -653,7 +653,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('LanguageSelectorPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '848fo6oa' /* Language */,
+                          'o8am89nt' /* Language */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -685,7 +685,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('CheckboxListTilePage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'y2h03oin' /* ListTile */,
+                          'edrdfgqk' /* ListTile */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -723,7 +723,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('LottieAnimationPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'v02o63sc' /* Lottie */,
+                          '97rpi1kn' /* Lottie */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -755,7 +755,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('PdfViewerPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '3wmmngmo' /* PdfViewer */,
+                          '37fdw033' /* PdfViewer */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -793,7 +793,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('ProgressBarPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'g9arbbul' /* ProgressBar */,
+                          '827p9qa9' /* ProgressBar */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -825,7 +825,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('RichTextPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '0rua001l' /* RichText */,
+                          '598she5v' /* RichText */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -863,7 +863,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('RiveAnimationPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'nlltwb91' /* RiveAnimat */,
+                          't01hashp' /* RiveAnimat */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -895,7 +895,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('StaticMapPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '72qte5s9' /* StaticMap */,
+                          'zb1q0nag' /* StaticMap */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -933,7 +933,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('CheckboxListTilePage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          't58m1q8k' /* CheckboxList */,
+                          'pdamhfkf' /* CheckboxList */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -965,7 +965,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                           context.pushNamed('SwitchPage');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '7org0a6x' /* Switch */,
+                          '5ckl65ve' /* Switch */,
                         ),
                         options: FFButtonOptions(
                           width: 100.0,
@@ -998,7 +998,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                       context.pushNamed('TimerPage');
                     },
                     text: FFLocalizations.of(context).getText(
-                      'j7p1a5y8' /* Timer */,
+                      'hj7knvv2' /* Timer */,
                     ),
                     options: FFButtonOptions(
                       width: 100.0,

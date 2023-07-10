@@ -50,7 +50,7 @@ class _FormElementsPageWidgetState extends State<FormElementsPageWidget> {
             children: [
               Text(
                 FFLocalizations.of(context).getText(
-                  'c2jnzlo0' /* Form Elements */,
+                  'kxgf8jnd' /* Form Elements */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -87,13 +87,41 @@ class _FormElementsPageWidgetState extends State<FormElementsPageWidget> {
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed('TextFieldPage');
                       },
                       text: FFLocalizations.of(context).getText(
-                        '3azu1zx2' /* TextField */,
+                        'p5rr85wb' /* TextField */,
+                      ),
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: FlutterFlowTheme.of(context).primary,
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                    FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('DropDownPage');
+                      },
+                      text: FFLocalizations.of(context).getText(
+                        'jclpe876' /* DropDown */,
                       ),
                       options: FFButtonOptions(
                         height: 40.0,

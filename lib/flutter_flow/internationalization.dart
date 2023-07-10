@@ -113,12 +113,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'ru': '',
     },
-    'zj70zvch': {
+    'r406qoz2': {
       'uz': 'UiBaseElement',
       'en': '',
       'ru': '',
     },
-    'l4efmxr4': {
+    'krdsd10f': {
       'uz': 'UiFormElement',
       'en': '',
       'ru': '',
@@ -1056,7 +1056,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'ru': '',
     },
-    '5u8p43l4': {
+    '0ujzy7gp': {
       'uz': '1',
       'en': '',
       'ru': '',
@@ -1074,7 +1074,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // ChartPage
   {
-    'rouexgzx': {
+    '3cmldjzq': {
       'uz': 'Name',
       'en': '',
       'ru': '',
@@ -1125,7 +1125,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'ru': '',
     },
-    '5xs192hy': {
+    '73fhk0dv': {
       'uz': 'Home',
       'en': '',
       'ru': '',
@@ -1133,147 +1133,147 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // UIBaseElement
   {
-    'jaflkyua': {
+    '9ybo4jnj': {
       'uz': 'BadgePage',
       'en': '',
       'ru': '',
     },
-    'm4mfrtel': {
+    'de4bcq12': {
       'uz': 'AudioPlayer',
       'en': '',
       'ru': '',
     },
-    'q3dmwm0f': {
+    'b5glrqut': {
       'uz': 'Button',
       'en': '',
       'ru': '',
     },
-    'pk90khlx': {
+    'm2zcslf3': {
       'uz': 'Blur',
       'en': '',
       'ru': '',
     },
-    'y7f87kiw': {
+    'agrdwbz7': {
       'uz': 'Chart',
       'en': '',
       'ru': '',
     },
-    'xqhr2so4': {
+    'odohvkxx': {
       'uz': 'Calendar',
       'en': '',
       'ru': '',
     },
-    'hnmb7l88': {
+    '4hbnibes': {
       'uz': 'CricleImage',
       'en': '',
       'ru': '',
     },
-    'aae3d9m7': {
+    'm4qvb1vg': {
       'uz': 'YoutubePlay',
       'en': '',
       'ru': '',
     },
-    'wd2xlp01': {
+    'okuyfcji': {
       'uz': 'HtmlView',
       'en': '',
       'ru': '',
     },
-    'htz6zts7': {
+    'ocd4fw6o': {
       'uz': 'WebView',
       'en': '',
       'ru': '',
     },
-    '7hgo80gc': {
+    '9r0l1y1g': {
       'uz': 'IconBUtton',
       'en': '',
       'ru': '',
     },
-    'uva1lkj3': {
+    'zwfxmaw2': {
       'uz': 'VideoPlayer',
       'en': '',
       'ru': '',
     },
-    'rohh49y6': {
+    'j5qozimf': {
       'uz': 'Icon',
       'en': '',
       'ru': '',
     },
-    'ome40bq9': {
+    '2s5ricol': {
       'uz': 'Transform',
       'en': '',
       'ru': '',
     },
-    'ge9hmshs': {
+    'k7sxitoz': {
       'uz': 'Image',
       'en': '',
       'ru': '',
     },
-    'szcoafon': {
+    'cehfeov8': {
       'uz': 'ToggleIcon',
       'en': '',
       'ru': '',
     },
-    '848fo6oa': {
+    'o8am89nt': {
       'uz': 'Language',
       'en': '',
       'ru': '',
     },
-    'y2h03oin': {
+    'edrdfgqk': {
       'uz': 'ListTile',
       'en': '',
       'ru': '',
     },
-    'v02o63sc': {
+    '97rpi1kn': {
       'uz': 'Lottie',
       'en': '',
       'ru': '',
     },
-    '3wmmngmo': {
+    '37fdw033': {
       'uz': 'PdfViewer',
       'en': '',
       'ru': '',
     },
-    'g9arbbul': {
+    '827p9qa9': {
       'uz': 'ProgressBar',
       'en': '',
       'ru': '',
     },
-    '0rua001l': {
+    '598she5v': {
       'uz': 'RichText',
       'en': '',
       'ru': '',
     },
-    'nlltwb91': {
+    't01hashp': {
       'uz': 'RiveAnimat',
       'en': '',
       'ru': '',
     },
-    '72qte5s9': {
+    'zb1q0nag': {
       'uz': 'StaticMap',
       'en': '',
       'ru': '',
     },
-    't58m1q8k': {
+    'pdamhfkf': {
       'uz': 'CheckboxList',
       'en': '',
       'ru': '',
     },
-    '7org0a6x': {
+    '5ckl65ve': {
       'uz': 'Switch',
       'en': '',
       'ru': '',
     },
-    'j7p1a5y8': {
+    'hj7knvv2': {
       'uz': 'Timer',
       'en': '',
       'ru': '',
     },
-    '8idjqcp4': {
+    'dew36im8': {
       'uz': 'UiBaseElement',
       'en': '',
       'ru': '',
     },
-    'c825sx6g': {
+    'ci0yxdjw': {
       'uz': 'Home',
       'en': '',
       'ru': '',
@@ -1281,22 +1281,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // TextFieldPage
   {
-    'b0x8aldj': {
+    'g9pm3n51': {
       'uz': 'Name',
       'en': '',
       'ru': '',
     },
-    'gndujjwn': {
+    'c8jpxzgu': {
       'uz': 'Password',
       'en': '',
       'ru': '',
     },
-    'l6mf2eew': {
+    '2mca56kq': {
       'uz': 'TextField',
       'en': '',
       'ru': '',
     },
-    '9owhj72p': {
+    '4x34now4': {
       'uz': 'Home',
       'en': '',
       'ru': '',
@@ -1304,17 +1304,80 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // FormElementsPage
   {
-    '3azu1zx2': {
+    'p5rr85wb': {
       'uz': 'TextField',
       'en': '',
       'ru': '',
     },
-    'c2jnzlo0': {
+    'jclpe876': {
+      'uz': 'DropDown',
+      'en': '',
+      'ru': '',
+    },
+    'kxgf8jnd': {
       'uz': 'Form Elements',
       'en': '',
       'ru': '',
     },
-    '5kxb60fh': {
+    'xiaqynq5': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // DropDownPage
+  {
+    'osw6zjpt': {
+      'uz': 'Uzbekistan',
+      'en': '',
+      'ru': '',
+    },
+    'cei8uqmx': {
+      'uz': 'Uzbekistan',
+      'en': '',
+      'ru': '',
+    },
+    'lom2g965': {
+      'uz': 'Ispan',
+      'en': '',
+      'ru': '',
+    },
+    '28k2ti3d': {
+      'uz': 'Germany',
+      'en': '',
+      'ru': '',
+    },
+    '3p6dvgux': {
+      'uz': 'Morocco',
+      'en': '',
+      'ru': '',
+    },
+    'if0d6zbe': {
+      'uz': 'New Zeland',
+      'en': '',
+      'ru': '',
+    },
+    'pc7mzf37': {
+      'uz': 'Tadjikistan',
+      'en': '',
+      'ru': '',
+    },
+    'rbvxv8tv': {
+      'uz': 'Country',
+      'en': '',
+      'ru': '',
+    },
+    'rzdep83c': {
+      'uz': 'Search your country',
+      'en': '',
+      'ru': '',
+    },
+    'ehu1r85s': {
+      'uz': 'DropDown',
+      'en': '',
+      'ru': '',
+    },
+    'c0mfw085': {
       'uz': 'Home',
       'en': '',
       'ru': '',

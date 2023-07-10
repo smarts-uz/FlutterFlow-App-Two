@@ -268,6 +268,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'FormElementsPage',
           path: '/formElementsPage',
           builder: (context, params) => FormElementsPageWidget(),
+        ),
+        FFRoute(
+          name: 'DropDownPage',
+          path: '/dropDownPage',
+          builder: (context, params) => DropDownPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
