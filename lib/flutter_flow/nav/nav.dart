@@ -78,14 +78,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? FormPageWidget() : LoginPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? CheckboxGroupPageWidget()
+          : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? FormPageWidget() : LoginPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? CheckboxGroupPageWidget()
+              : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -313,6 +315,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'FormPage',
           path: '/formPage',
           builder: (context, params) => FormPageWidget(),
+        ),
+        FFRoute(
+          name: 'CheckboxGroupPage',
+          path: '/checkboxGroupPage',
+          builder: (context, params) => CheckboxGroupPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

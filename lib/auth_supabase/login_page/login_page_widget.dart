@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('FormPage', context.mounted);
+                    context.goNamedAuth('CheckboxGroupPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

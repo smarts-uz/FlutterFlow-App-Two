@@ -78,3 +78,5 @@ export '/count_controller_page/count_controller_page_widget.dart'
 export '/choice_chips_page/choice_chips_page_widget.dart'
     show ChoiceChipsPageWidget;
 export '/form_page/form_page_widget.dart' show FormPageWidget;
+export '/checkbox_group_page/checkbox_group_page_widget.dart'
+    show CheckboxGroupPageWidget;
