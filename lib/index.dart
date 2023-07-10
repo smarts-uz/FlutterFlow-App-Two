@@ -70,3 +70,4 @@ export '/radio_button_page/radio_button_page_widget.dart'
     show RadioButtonPageWidget;
 export '/pin_code_page/pin_code_page_widget.dart' show PinCodePageWidget;
 export '/slider_page/slider_page_widget.dart' show SliderPageWidget;
+export '/rating_bar_page/rating_bar_page_widget.dart' show RatingBarPageWidget;

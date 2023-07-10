@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('SliderPage', context.mounted);
+                    context.goNamedAuth('RatingBarPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

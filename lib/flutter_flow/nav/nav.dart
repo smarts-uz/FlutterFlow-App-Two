@@ -79,13 +79,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? SliderPageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? RatingBarPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? SliderPageWidget()
+              ? RatingBarPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -289,6 +289,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SliderPage',
           path: '/sliderPage',
           builder: (context, params) => SliderPageWidget(),
+        ),
+        FFRoute(
+          name: 'RatingBarPage',
+          path: '/ratingBarPage',
+          builder: (context, params) => RatingBarPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
