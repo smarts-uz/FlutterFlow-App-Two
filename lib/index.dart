@@ -68,3 +68,4 @@ export '/form_elements_page/form_elements_page_widget.dart'
 export '/drop_down_page/drop_down_page_widget.dart' show DropDownPageWidget;
 export '/radio_button_page/radio_button_page_widget.dart'
     show RadioButtonPageWidget;
+export '/pin_code_page/pin_code_page_widget.dart' show PinCodePageWidget;

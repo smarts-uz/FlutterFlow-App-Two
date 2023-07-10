@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('RadioButtonPage', context.mounted);
+                    context.goNamedAuth('PinCodePage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

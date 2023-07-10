@@ -79,14 +79,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? RadioButtonPageWidget()
+          ? PinCodePageWidget()
           : RegisterPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? RadioButtonPageWidget()
+              ? PinCodePageWidget()
               : RegisterPageWidget(),
         ),
         FFRoute(
@@ -280,6 +280,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'RadioButtonPage',
           path: '/radioButtonPage',
           builder: (context, params) => RadioButtonPageWidget(),
+        ),
+        FFRoute(
+          name: 'PinCodePage',
+          path: '/pinCodePage',
+          builder: (context, params) => PinCodePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
