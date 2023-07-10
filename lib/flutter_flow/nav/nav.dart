@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow_theme.dart';
+import '/backend/backend.dart';
 
 import '/backend/supabase/supabase.dart';
 import '../../auth/base_auth_user_provider.dart';
@@ -77,14 +78,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : RegisterPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? RadioButtonPageWidget()
+          : RegisterPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? HomePageWidget()
+              ? RadioButtonPageWidget()
               : RegisterPageWidget(),
         ),
         FFRoute(
@@ -273,6 +275,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DropDownPage',
           path: '/dropDownPage',
           builder: (context, params) => DropDownPageWidget(),
+        ),
+        FFRoute(
+          name: 'RadioButtonPage',
+          path: '/radioButtonPage',
+          builder: (context, params) => RadioButtonPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -392,6 +399,7 @@ class FFParameters {
     String paramName,
     ParamType type, [
     bool isList = false,
+    List<String>? collectionNamePath,
   ]) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -405,11 +413,8 @@ class FFParameters {
       return param;
     }
     // Return serialized value.
-    return deserializeParam<T>(
-      param,
-      type,
-      isList,
-    );
+    return deserializeParam<T>(param, type, isList,
+        collectionNamePath: collectionNamePath);
   }
 }
 

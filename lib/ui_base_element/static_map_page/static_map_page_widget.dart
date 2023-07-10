@@ -51,9 +51,7 @@ class _StaticMapPageWidgetState extends State<StaticMapPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'jj8gq9wv' /* StaticMap */,
-                ),
+                'StaticMap',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

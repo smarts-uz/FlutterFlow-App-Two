@@ -51,9 +51,7 @@ class _RiveAnimationPageWidgetState extends State<RiveAnimationPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'usddc8nb' /* RiveAnimation */,
-                ),
+                'RiveAnimation',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

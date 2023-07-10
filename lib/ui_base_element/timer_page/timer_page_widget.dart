@@ -53,9 +53,7 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'm9sqg5e7' /* Timer */,
-                ),
+                'Timer',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: FlutterFlowTheme.of(context).primaryText,
@@ -119,9 +117,7 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
                       _model.timerController.onExecute
                           .add(StopWatchExecute.start);
                     },
-                    text: FFLocalizations.of(context).getText(
-                      'ez0qmhqp' /* Start */,
-                    ),
+                    text: 'Start',
                     options: FFButtonOptions(
                       width: double.infinity,
                       height: 40.0,
@@ -151,9 +147,7 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
                       _model.timerController.onExecute
                           .add(StopWatchExecute.stop);
                     },
-                    text: FFLocalizations.of(context).getText(
-                      '1wfkcxvk' /* Stop */,
-                    ),
+                    text: 'Stop',
                     options: FFButtonOptions(
                       width: double.infinity,
                       height: 40.0,
@@ -183,9 +177,7 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
                       _model.timerController.onExecute
                           .add(StopWatchExecute.reset);
                     },
-                    text: FFLocalizations.of(context).getText(
-                      'bgyvjwri' /* Reset */,
-                    ),
+                    text: 'Reset',
                     options: FFButtonOptions(
                       width: double.infinity,
                       height: 40.0,

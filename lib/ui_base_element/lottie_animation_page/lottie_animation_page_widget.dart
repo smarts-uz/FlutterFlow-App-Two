@@ -50,9 +50,7 @@ class _LottieAnimationPageWidgetState extends State<LottieAnimationPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '6xntu4mv' /* LottieAnimation */,
-                ),
+                'LottieAnimation',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

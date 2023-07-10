@@ -49,9 +49,7 @@ class _PdfViewerPageWidgetState extends State<PdfViewerPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'o8h26c5v' /* PdfViewer */,
-                ),
+                'PdfViewer',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

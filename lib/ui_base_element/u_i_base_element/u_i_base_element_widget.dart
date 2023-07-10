@@ -63,9 +63,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                 ),
               ),
               Text(
-                FFLocalizations.of(context).getText(
-                  'dew36im8' /* UiBaseElement */,
-                ),
+                'UiBaseElement',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -93,9 +91,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                       onPressed: () async {
                         context.pushNamed('BadgePage');
                       },
-                      text: FFLocalizations.of(context).getText(
-                        '9ybo4jnj' /* BadgePage */,
-                      ),
+                      text: 'BadgePage',
                       options: FFButtonOptions(
                         width: 100.0,
                         height: 40.0,
@@ -124,9 +120,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('AudioPlayerPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'de4bcq12' /* AudioPlayer */,
-                        ),
+                        text: 'AudioPlayer',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -162,9 +156,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('ButtonPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'b5glrqut' /* Button */,
-                        ),
+                        text: 'Button',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -194,9 +186,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('BlurPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'm2zcslf3' /* Blur */,
-                        ),
+                        text: 'Blur',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -232,9 +222,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('ChartPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'agrdwbz7' /* Chart */,
-                        ),
+                        text: 'Chart',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -264,9 +252,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('CalendarPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'odohvkxx' /* Calendar */,
-                        ),
+                        text: 'Calendar',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -302,9 +288,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('CircleImage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '4hbnibes' /* CricleImage */,
-                        ),
+                        text: 'CricleImage',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -334,9 +318,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('YoutubePlayerPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'm4qvb1vg' /* YoutubePlay */,
-                        ),
+                        text: 'YoutubePlay',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -372,9 +354,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('HtmlViewPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'okuyfcji' /* HtmlView */,
-                        ),
+                        text: 'HtmlView',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -404,9 +384,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('WebViewPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'ocd4fw6o' /* WebView */,
-                        ),
+                        text: 'WebView',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -442,9 +420,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('IconButton');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '9r0l1y1g' /* IconBUtton */,
-                        ),
+                        text: 'IconBUtton',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -474,9 +450,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('VideoPlayerPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'zwfxmaw2' /* VideoPlayer */,
-                        ),
+                        text: 'VideoPlayer',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -512,9 +486,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('IconPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'j5qozimf' /* Icon */,
-                        ),
+                        text: 'Icon',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -544,9 +516,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('IconPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '2s5ricol' /* Transform */,
-                        ),
+                        text: 'Transform',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -582,9 +552,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('ImagePage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'k7sxitoz' /* Image */,
-                        ),
+                        text: 'Image',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -614,9 +582,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('ToggleIconPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'cehfeov8' /* ToggleIcon */,
-                        ),
+                        text: 'ToggleIcon',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -652,9 +618,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('LanguageSelectorPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'o8am89nt' /* Language */,
-                        ),
+                        text: 'Language',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -684,9 +648,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('CheckboxListTilePage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'edrdfgqk' /* ListTile */,
-                        ),
+                        text: 'ListTile',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -722,9 +684,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('LottieAnimationPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '97rpi1kn' /* Lottie */,
-                        ),
+                        text: 'Lottie',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -754,9 +714,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('PdfViewerPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '37fdw033' /* PdfViewer */,
-                        ),
+                        text: 'PdfViewer',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -792,9 +750,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('ProgressBarPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '827p9qa9' /* ProgressBar */,
-                        ),
+                        text: 'ProgressBar',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -824,9 +780,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('RichTextPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '598she5v' /* RichText */,
-                        ),
+                        text: 'RichText',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -862,9 +816,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('RiveAnimationPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          't01hashp' /* RiveAnimat */,
-                        ),
+                        text: 'RiveAnimat',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -894,9 +846,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('StaticMapPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'zb1q0nag' /* StaticMap */,
-                        ),
+                        text: 'StaticMap',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -932,9 +882,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('CheckboxListTilePage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'pdamhfkf' /* CheckboxList */,
-                        ),
+                        text: 'CheckboxList',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -964,9 +912,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                         onPressed: () async {
                           context.pushNamed('SwitchPage');
                         },
-                        text: FFLocalizations.of(context).getText(
-                          '5ckl65ve' /* Switch */,
-                        ),
+                        text: 'Switch',
                         options: FFButtonOptions(
                           width: 100.0,
                           height: 40.0,
@@ -997,9 +943,7 @@ class _UIBaseElementWidgetState extends State<UIBaseElementWidget> {
                     onPressed: () async {
                       context.pushNamed('TimerPage');
                     },
-                    text: FFLocalizations.of(context).getText(
-                      'hj7knvv2' /* Timer */,
-                    ),
+                    text: 'Timer',
                     options: FFButtonOptions(
                       width: 100.0,
                       height: 40.0,

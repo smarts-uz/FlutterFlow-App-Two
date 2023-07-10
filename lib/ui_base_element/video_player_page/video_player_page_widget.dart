@@ -49,9 +49,7 @@ class _VideoPlayerPageWidgetState extends State<VideoPlayerPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'tpa7rvxv' /* VideoPlayer */,
-                ),
+                'VideoPlayer',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

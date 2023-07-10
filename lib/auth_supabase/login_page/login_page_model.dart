@@ -1,4 +1,4 @@
-import '/auth/supabase_auth/auth_util.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -16,9 +16,7 @@ class LoginPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? emailFieldControllerValidator;
   String? _emailFieldControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        '2gwp5mbm' /* Field is required */,
-      );
+      return 'Field is required';
     }
 
     if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
@@ -33,15 +31,11 @@ class LoginPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? passwordFieldControllerValidator;
   String? _passwordFieldControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        '5nslo8x8' /* Field is required */,
-      );
+      return 'Field is required';
     }
 
     if (val.length < 8) {
-      return FFLocalizations.of(context).getText(
-        'h6bjcmuh' /* Password requires at least 8 c... */,
-      );
+      return 'Password requires at least 8 characters';
     }
 
     return null;

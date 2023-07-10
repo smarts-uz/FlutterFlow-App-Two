@@ -48,9 +48,7 @@ class _CircleImageWidgetState extends State<CircleImageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'ij9g67y7' /* CircleImage */,
-                ),
+                'CircleImage',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -101,9 +99,7 @@ class _CircleImageWidgetState extends State<CircleImageWidget> {
                       ),
                     ),
                     Text(
-                      FFLocalizations.of(context).getText(
-                        '6yt9io9k' /* Title */,
-                      ),
+                      'Title',
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                   ],
@@ -113,9 +109,7 @@ class _CircleImageWidgetState extends State<CircleImageWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      FFLocalizations.of(context).getText(
-                        'si8ybuvv' /* Title */,
-                      ),
+                      'Title',
                       style: FlutterFlowTheme.of(context).titleLarge,
                     ),
                     Container(

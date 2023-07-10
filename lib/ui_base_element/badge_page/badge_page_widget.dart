@@ -49,9 +49,7 @@ class _BadgePageWidgetState extends State<BadgePageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '4an3t1zt' /* Badge */,
-                ),
+                'Badge',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -94,9 +92,7 @@ class _BadgePageWidgetState extends State<BadgePageWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                     child: badges.Badge(
                       badgeContent: Text(
-                        FFLocalizations.of(context).getText(
-                          '7edopa1g' /* 8 */,
-                        ),
+                        '8',
                         style: FlutterFlowTheme.of(context).titleSmall.override(
                               fontFamily: 'Readex Pro',
                               color: Colors.white,
@@ -120,9 +116,7 @@ class _BadgePageWidgetState extends State<BadgePageWidget> {
                   ),
                   badges.Badge(
                     badgeContent: Text(
-                      FFLocalizations.of(context).getText(
-                        '0ujzy7gp' /* 1 */,
-                      ),
+                      '1',
                       style: FlutterFlowTheme.of(context).titleSmall.override(
                             fontFamily: 'Readex Pro',
                             color: Colors.white,

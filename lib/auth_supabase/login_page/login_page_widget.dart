@@ -1,4 +1,4 @@
-import '/auth/supabase_auth/auth_util.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -63,9 +63,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 12.0),
                 child: Text(
-                  FFLocalizations.of(context).getText(
-                    '3nfm3eoh' /* Supabase and FuttetFlow */,
-                  ),
+                  'Supabase and FuttetFlow',
                   style: FlutterFlowTheme.of(context).titleLarge,
                 ),
               ),
@@ -85,9 +83,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              'ng40goww' /* Email */,
-                            ),
+                            labelText: 'Email',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -135,9 +131,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                           autofocus: true,
                           obscureText: !_model.passwordFieldVisibility,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              'a8kw6x9u' /* Password */,
-                            ),
+                            labelText: 'Password',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -209,11 +203,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('HomePage', context.mounted);
+                    context.goNamedAuth('RadioButtonPage', context.mounted);
                   },
-                  text: FFLocalizations.of(context).getText(
-                    'iqdlzjmm' /* Login */,
-                  ),
+                  text: 'Login',
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
@@ -241,9 +233,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
-                      FFLocalizations.of(context).getText(
-                        '9kqwmsz3' /* Not a member? */,
-                      ),
+                      'Not a member?',
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
                     InkWell(
@@ -255,9 +245,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                         context.pushNamed('RegisterPage');
                       },
                       child: Text(
-                        FFLocalizations.of(context).getText(
-                          'xdkfpqqz' /* Register now */,
-                        ),
+                        'Register now',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Readex Pro',
                               color: FlutterFlowTheme.of(context).primary,

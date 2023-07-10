@@ -1,5 +1,3 @@
-import '/auth/supabase_auth/auth_util.dart';
-import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -50,9 +48,7 @@ class _ChartPageWidgetState extends State<ChartPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'z1ib8k5e' /* ChartPage */,
-                ),
+                'ChartPage',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -83,22 +79,7 @@ class _ChartPageWidgetState extends State<ChartPageWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            children: [
-              Container(
-                width: 370.0,
-                height: 230.0,
-                child: FlutterFlowPieChart(
-                  data: FFPieChartData(
-                    values: [currentUserEmail],
-                    colors: [FlutterFlowTheme.of(context).primary],
-                    radius: [100.0],
-                  ),
-                  donutHoleRadius: 0.0,
-                  donutHoleColor: Colors.transparent,
-                  sectionLabelStyle: FlutterFlowTheme.of(context).headlineSmall,
-                ),
-              ),
-            ],
+            children: [],
           ),
         ),
       ),

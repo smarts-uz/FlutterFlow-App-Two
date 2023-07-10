@@ -51,9 +51,7 @@ class _TextFieldPageWidgetState extends State<TextFieldPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '2mca56kq' /* TextField */,
-                ),
+                'TextField',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -96,9 +94,7 @@ class _TextFieldPageWidgetState extends State<TextFieldPageWidget> {
                       autofocus: true,
                       obscureText: false,
                       decoration: InputDecoration(
-                        labelText: FFLocalizations.of(context).getText(
-                          'g9pm3n51' /* Name */,
-                        ),
+                        labelText: 'Name',
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
                                   fontFamily: 'Readex Pro',
@@ -155,9 +151,7 @@ class _TextFieldPageWidgetState extends State<TextFieldPageWidget> {
                     autofocus: true,
                     obscureText: !_model.passwordVisibility,
                     decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        'c8jpxzgu' /* Password */,
-                      ),
+                      labelText: 'Password',
                       labelStyle: FlutterFlowTheme.of(context).labelMedium,
                       hintStyle: FlutterFlowTheme.of(context).labelMedium,
                       enabledBorder: UnderlineInputBorder(

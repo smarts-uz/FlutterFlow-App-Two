@@ -48,9 +48,7 @@ class _IconPageWidgetState extends State<IconPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '9sv208ns' /* IconPage */,
-                ),
+                'IconPage',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -97,9 +95,7 @@ class _IconPageWidgetState extends State<IconPageWidget> {
                       ),
                     ),
                     Text(
-                      FFLocalizations.of(context).getText(
-                        '14ooje8q' /* New Group */,
-                      ),
+                      'New Group',
                       style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
                   ],
@@ -119,9 +115,7 @@ class _IconPageWidgetState extends State<IconPageWidget> {
                         ),
                       ),
                       Text(
-                        FFLocalizations.of(context).getText(
-                          'u7ytkz3n' /* Contacts */,
-                        ),
+                        'Contacts',
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                     ],
@@ -142,9 +136,7 @@ class _IconPageWidgetState extends State<IconPageWidget> {
                         ),
                       ),
                       Text(
-                        FFLocalizations.of(context).getText(
-                          'hywntrmg' /* Settings */,
-                        ),
+                        'Settings',
                         style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                     ],

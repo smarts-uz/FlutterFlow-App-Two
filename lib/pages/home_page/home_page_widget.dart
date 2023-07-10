@@ -49,9 +49,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'eb3u478v' /* HomePage */,
-                ),
+                'HomePage',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -94,9 +92,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   onPressed: () async {
                     context.pushNamed('UIBaseElement');
                   },
-                  text: FFLocalizations.of(context).getText(
-                    'r406qoz2' /* UiBaseElement */,
-                  ),
+                  text: 'UiBaseElement',
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
@@ -123,9 +119,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   onPressed: () async {
                     context.pushNamed('FormElementsPage');
                   },
-                  text: FFLocalizations.of(context).getText(
-                    'krdsd10f' /* UiFormElement */,
-                  ),
+                  text: 'UiFormElement',
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:

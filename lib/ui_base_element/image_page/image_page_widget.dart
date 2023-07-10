@@ -48,9 +48,7 @@ class _ImagePageWidgetState extends State<ImagePageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'cv4azlvz' /* Image */,
-                ),
+                'Image',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

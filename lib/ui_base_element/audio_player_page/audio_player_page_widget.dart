@@ -49,9 +49,7 @@ class _AudioPlayerPageWidgetState extends State<AudioPlayerPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '5oh3lyqo' /* AudioPlayer */,
-                ),
+                'AudioPlayer',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

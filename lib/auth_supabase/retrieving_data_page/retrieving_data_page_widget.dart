@@ -50,9 +50,7 @@ class _RetrievingDataPageWidgetState extends State<RetrievingDataPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '6ttbzfrp' /* Your notes */,
-                ),
+                'Your notes',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

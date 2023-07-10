@@ -49,9 +49,7 @@ class _WebViewPageWidgetState extends State<WebViewPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'prn58kl6' /* WebView */,
-                ),
+                'WebView',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

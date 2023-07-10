@@ -49,9 +49,7 @@ class _ButtonPageWidgetState extends State<ButtonPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  '1pyoi8t9' /* ButtonPage */,
-                ),
+                'ButtonPage',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -90,9 +88,7 @@ class _ButtonPageWidgetState extends State<ButtonPageWidget> {
                   onPressed: () {
                     print('Button pressed ...');
                   },
-                  text: FFLocalizations.of(context).getText(
-                    '1igjvsdc' /* Login */,
-                  ),
+                  text: 'Login',
                   icon: Icon(
                     Icons.login,
                     size: 24.0,

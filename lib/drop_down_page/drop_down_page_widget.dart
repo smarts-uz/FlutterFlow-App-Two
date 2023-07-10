@@ -50,9 +50,7 @@ class _DropDownPageWidgetState extends State<DropDownPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'ehu1r85s' /* DropDown */,
-                ),
+                'DropDown',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -89,30 +87,15 @@ class _DropDownPageWidgetState extends State<DropDownPageWidget> {
                 FlutterFlowDropDown<String>(
                   controller: _model.dropDownValueController ??=
                       FormFieldController<String>(
-                    _model.dropDownValue ??=
-                        FFLocalizations.of(context).getText(
-                      'osw6zjpt' /* Uzbekistan */,
-                    ),
+                    _model.dropDownValue ??= 'Uzbekistan',
                   ),
                   options: [
-                    FFLocalizations.of(context).getText(
-                      'cei8uqmx' /* Uzbekistan */,
-                    ),
-                    FFLocalizations.of(context).getText(
-                      'lom2g965' /* Ispan */,
-                    ),
-                    FFLocalizations.of(context).getText(
-                      '28k2ti3d' /* Germany */,
-                    ),
-                    FFLocalizations.of(context).getText(
-                      '3p6dvgux' /* Morocco */,
-                    ),
-                    FFLocalizations.of(context).getText(
-                      'if0d6zbe' /* New Zeland */,
-                    ),
-                    FFLocalizations.of(context).getText(
-                      'pc7mzf37' /* Tadjikistan */,
-                    )
+                    'Uzbekistan',
+                    'Ispan',
+                    'Germany',
+                    'Morocco',
+                    'New Zeland',
+                    'Tadjikistan'
                   ],
                   onChanged: (val) =>
                       setState(() => _model.dropDownValue = val),
@@ -120,12 +103,8 @@ class _DropDownPageWidgetState extends State<DropDownPageWidget> {
                   height: 50.0,
                   searchHintTextStyle: FlutterFlowTheme.of(context).labelMedium,
                   textStyle: FlutterFlowTheme.of(context).bodyMedium,
-                  hintText: FFLocalizations.of(context).getText(
-                    'rbvxv8tv' /* Country */,
-                  ),
-                  searchHintText: FFLocalizations.of(context).getText(
-                    'rzdep83c' /* Search your country */,
-                  ),
+                  hintText: 'Country',
+                  searchHintText: 'Search your country',
                   icon: Icon(
                     Icons.keyboard_arrow_down_rounded,
                     color: FlutterFlowTheme.of(context).secondaryText,

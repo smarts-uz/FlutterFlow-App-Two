@@ -1,4 +1,4 @@
-import '/auth/supabase_auth/auth_util.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -88,9 +88,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                   ),
                 ),
                 Text(
-                  FFLocalizations.of(context).getText(
-                    '8xxkzjfo' /* Register by Supabse */,
-                  ),
+                  'Register by Supabse',
                   style: FlutterFlowTheme.of(context).titleLarge,
                 ),
                 Form(
@@ -107,9 +105,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              '8i1cdiit' /* Full name */,
-                            ),
+                            labelText: 'Full name',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -157,9 +153,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              'qlqnbwjw' /* Email */,
-                            ),
+                            labelText: 'Email',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -207,9 +201,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: !_model.passwordVisibility1,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              'q8k4rzq4' /* Password */,
-                            ),
+                            labelText: 'Password',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -270,9 +262,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                           autofocus: true,
                           obscureText: !_model.passwordVisibility2,
                           decoration: InputDecoration(
-                            labelText: FFLocalizations.of(context).getText(
-                              '286n3bw6' /* Confirm password */,
-                            ),
+                            labelText: 'Confirm password',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -365,11 +355,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       'email': _model.emailTextController.text,
                     });
 
-                    context.goNamedAuth('HomePage', context.mounted);
+                    context.goNamedAuth('RadioButtonPage', context.mounted);
                   },
-                  text: FFLocalizations.of(context).getText(
-                    'o5d9g6k6' /* Sign UP */,
-                  ),
+                  text: 'Sign UP',
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:

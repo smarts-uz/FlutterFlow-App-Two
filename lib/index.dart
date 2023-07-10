@@ -66,3 +66,5 @@ export '/text_field_page/text_field_page_widget.dart' show TextFieldPageWidget;
 export '/form_elements_page/form_elements_page_widget.dart'
     show FormElementsPageWidget;
 export '/drop_down_page/drop_down_page_widget.dart' show DropDownPageWidget;
+export '/radio_button_page/radio_button_page_widget.dart'
+    show RadioButtonPageWidget;

@@ -49,9 +49,7 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'bfqdtjiq' /* Calendar Page */,
-                ),
+                'Calendar Page',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,

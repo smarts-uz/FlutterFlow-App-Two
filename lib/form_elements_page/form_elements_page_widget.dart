@@ -49,9 +49,7 @@ class _FormElementsPageWidgetState extends State<FormElementsPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'kxgf8jnd' /* Form Elements */,
-                ),
+                'Form Elements',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -93,9 +91,7 @@ class _FormElementsPageWidgetState extends State<FormElementsPageWidget> {
                       onPressed: () async {
                         context.pushNamed('TextFieldPage');
                       },
-                      text: FFLocalizations.of(context).getText(
-                        'p5rr85wb' /* TextField */,
-                      ),
+                      text: 'TextField',
                       options: FFButtonOptions(
                         height: 40.0,
                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -120,9 +116,7 @@ class _FormElementsPageWidgetState extends State<FormElementsPageWidget> {
                       onPressed: () async {
                         context.pushNamed('DropDownPage');
                       },
-                      text: FFLocalizations.of(context).getText(
-                        'jclpe876' /* DropDown */,
-                      ),
+                      text: 'DropDown',
                       options: FFButtonOptions(
                         height: 40.0,
                         padding: EdgeInsetsDirectional.fromSTEB(

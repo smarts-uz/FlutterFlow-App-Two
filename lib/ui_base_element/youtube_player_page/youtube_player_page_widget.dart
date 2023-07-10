@@ -51,9 +51,7 @@ class _YoutubePlayerPageWidgetState extends State<YoutubePlayerPageWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  FFLocalizations.of(context).getText(
-                    '8uj5hpcq' /* YoutubePlayer */,
-                  ),
+                  'YoutubePlayer',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Outfit',
                         color: Colors.white,

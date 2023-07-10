@@ -49,9 +49,7 @@ class _BlurPageWidgetState extends State<BlurPageWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                FFLocalizations.of(context).getText(
-                  'wob7744r' /* Blur */,
-                ),
+                'Blur',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
                       color: Colors.white,
@@ -106,9 +104,7 @@ class _BlurPageWidgetState extends State<BlurPageWidget> {
                       child: Align(
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
-                          FFLocalizations.of(context).getText(
-                            'rnz1frnv' /* The picture */,
-                          ),
+                          'The picture',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',

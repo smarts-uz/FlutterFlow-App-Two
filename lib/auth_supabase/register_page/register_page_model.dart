@@ -1,4 +1,4 @@
-import '/auth/supabase_auth/auth_util.dart';
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -17,9 +17,7 @@ class RegisterPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? textController1Validator;
   String? _textController1Validator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        'sx1odwil' /* Field is required */,
-      );
+      return 'Field is required';
     }
 
     if (val.length < 2) {
@@ -34,15 +32,11 @@ class RegisterPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? emailTextControllerValidator;
   String? _emailTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        'k16do29g' /* Field is required */,
-      );
+      return 'Field is required';
     }
 
     if (!RegExp(kTextValidatorEmailRegex).hasMatch(val)) {
-      return FFLocalizations.of(context).getText(
-        'ih3l3xd3' /* You must use @ this character. */,
-      );
+      return 'You must use @ this character.';
     }
     return null;
   }
@@ -53,15 +47,11 @@ class RegisterPageModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
   String? _passwordTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        'v7r4vkd4' /* Field is required */,
-      );
+      return 'Field is required';
     }
 
     if (val.length < 8) {
-      return FFLocalizations.of(context).getText(
-        'aeftmfkn' /* Password requires at least 8 c... */,
-      );
+      return 'Password requires at least 8 charachters.';
     }
 
     return null;
@@ -75,15 +65,11 @@ class RegisterPageModel extends FlutterFlowModel {
   String? _confirmPasswordTextControllerValidator(
       BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        '5dlbmfk9' /* Field is required */,
-      );
+      return 'Field is required';
     }
 
     if (val.length < 8) {
-      return FFLocalizations.of(context).getText(
-        '5p661zex' /* Password requires at least 8 c... */,
-      );
+      return 'Password requires at least 8 charachters.';
     }
 
     return null;
