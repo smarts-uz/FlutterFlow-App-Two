@@ -1,35 +1,33 @@
-import '/auth/supabase_auth/auth_util.dart';
-import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'register_page_model.dart';
-export 'register_page_model.dart';
+import 'form_page_model.dart';
+export 'form_page_model.dart';
 
-class RegisterPageWidget extends StatefulWidget {
-  const RegisterPageWidget({Key? key}) : super(key: key);
+class FormPageWidget extends StatefulWidget {
+  const FormPageWidget({Key? key}) : super(key: key);
 
   @override
-  _RegisterPageWidgetState createState() => _RegisterPageWidgetState();
+  _FormPageWidgetState createState() => _FormPageWidgetState();
 }
 
-class _RegisterPageWidgetState extends State<RegisterPageWidget> {
-  late RegisterPageModel _model;
+class _FormPageWidgetState extends State<FormPageWidget> {
+  late FormPageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => RegisterPageModel());
+    _model = createModel(context, () => FormPageModel());
 
     _model.textController1 ??= TextEditingController();
-    _model.emailTextController ??= TextEditingController();
-    _model.passwordTextController ??= TextEditingController();
-    _model.confirmPasswordTextController ??= TextEditingController();
+    _model.textController2 ??= TextEditingController();
+    _model.textController3 ??= TextEditingController();
+    _model.textController4 ??= TextEditingController();
   }
 
   @override
@@ -48,49 +46,28 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        appBar: AppBar(
+          backgroundColor: FlutterFlowTheme.of(context).primary,
+          automaticallyImplyLeading: false,
+          title: Text(
+            'Form',
+            style: FlutterFlowTheme.of(context).headlineMedium.override(
+                  fontFamily: 'Outfit',
+                  color: Colors.white,
+                  fontSize: 22.0,
+                ),
+          ),
+          actions: [],
+          centerTitle: false,
+          elevation: 2.0,
+        ),
         body: SafeArea(
           top: true,
           child: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('LoginPage');
-                        },
-                        child: Icon(
-                          Icons.remove_rounded,
-                          color: FlutterFlowTheme.of(context).primaryText,
-                          size: 24.0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(50.0),
-                  child: Image.network(
-                    'https://picsum.photos/seed/777/600',
-                    width: 300.0,
-                    height: 200.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Text(
-                  'Register by Supabse',
-                  style: FlutterFlowTheme.of(context).titleLarge,
-                ),
                 Form(
                   key: _model.formKey,
                   autovalidateMode: AutovalidateMode.always,
@@ -98,14 +75,14 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 12.0, 0.0, 12.0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                         child: TextFormField(
                           controller: _model.textController1,
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: 'Full name',
+                            labelText: 'Name',
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
@@ -114,28 +91,28 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                 color: FlutterFlowTheme.of(context).alternate,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             errorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedErrorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             filled: true,
                             fillColor: FlutterFlowTheme.of(context).alternate,
@@ -147,9 +124,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 12.0, 0.0, 12.0),
+                            8.0, 10.0, 8.0, 10.0),
                         child: TextFormField(
-                          controller: _model.emailTextController,
+                          controller: _model.textController2,
                           autofocus: true,
                           obscureText: false,
                           decoration: InputDecoration(
@@ -162,42 +139,42 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                 color: FlutterFlowTheme.of(context).alternate,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             errorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedErrorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             filled: true,
                             fillColor: FlutterFlowTheme.of(context).alternate,
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
-                          validator: _model.emailTextControllerValidator
+                          validator: _model.textController2Validator
                               .asValidator(context),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 12.0, 0.0, 12.0),
+                            8.0, 10.0, 8.0, 10.0),
                         child: TextFormField(
-                          controller: _model.passwordTextController,
+                          controller: _model.textController3,
                           autofocus: true,
                           obscureText: !_model.passwordVisibility1,
                           decoration: InputDecoration(
@@ -210,28 +187,28 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                 color: FlutterFlowTheme.of(context).alternate,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             errorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedErrorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             filled: true,
                             fillColor: FlutterFlowTheme.of(context).alternate,
@@ -250,15 +227,15 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                             ),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
-                          validator: _model.passwordTextControllerValidator
+                          validator: _model.textController3Validator
                               .asValidator(context),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            0.0, 12.0, 0.0, 12.0),
+                            8.0, 10.0, 8.0, 10.0),
                         child: TextFormField(
-                          controller: _model.confirmPasswordTextController,
+                          controller: _model.textController4,
                           autofocus: true,
                           obscureText: !_model.passwordVisibility2,
                           decoration: InputDecoration(
@@ -271,28 +248,28 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                 color: FlutterFlowTheme.of(context).alternate,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             errorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             focusedErrorBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 2.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(50.0),
                             ),
                             filled: true,
                             fillColor: FlutterFlowTheme.of(context).alternate,
@@ -311,70 +288,43 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                             ),
                           ),
                           style: FlutterFlowTheme.of(context).bodyMedium,
-                          validator: _model
-                              .confirmPasswordTextControllerValidator
+                          validator: _model.textController4Validator
                               .asValidator(context),
                         ),
                       ),
                     ],
                   ),
                 ),
-                FFButtonWidget(
-                  onPressed: () async {
-                    if (_model.formKey.currentState == null ||
-                        !_model.formKey.currentState!.validate()) {
-                      return;
-                    }
-                    GoRouter.of(context).prepareAuthEvent();
-                    if (_model.passwordTextController.text !=
-                        _model.confirmPasswordTextController.text) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            'Passwords don\'t match!',
-                          ),
-                        ),
-                      );
-                      return;
-                    }
-
-                    final user = await authManager.createAccountWithEmail(
-                      context,
-                      _model.emailTextController.text,
-                      _model.passwordTextController.text,
-                    );
-                    if (user == null) {
-                      return;
-                    }
-
-                    await UsersTable().insert({
-                      'id': currentUserUid,
-                      'created_at':
-                          supaSerialize<DateTime>(getCurrentTimestamp),
-                      'name': _model.textController1.text,
-                      'email': _model.emailTextController.text,
-                    });
-
-                    context.goNamedAuth('FormPage', context.mounted);
-                  },
-                  text: 'Sign UP',
-                  options: FFButtonOptions(
-                    height: 40.0,
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                    iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primary,
-                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Readex Pro',
-                          color: Colors.white,
-                        ),
-                    elevation: 3.0,
-                    borderSide: BorderSide(
-                      color: Colors.transparent,
-                      width: 1.0,
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      if (_model.formKey.currentState == null ||
+                          !_model.formKey.currentState!.validate()) {
+                        return;
+                      }
+                    },
+                    text: 'Button',
+                    options: FFButtonOptions(
+                      width: 200.0,
+                      height: 40.0,
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      iconPadding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Readex Pro',
+                                color: Colors.white,
+                              ),
+                      elevation: 3.0,
+                      borderSide: BorderSide(
+                        color: Colors.transparent,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
               ],

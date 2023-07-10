@@ -77,3 +77,4 @@ export '/count_controller_page/count_controller_page_widget.dart'
     show CountControllerPageWidget;
 export '/choice_chips_page/choice_chips_page_widget.dart'
     show ChoiceChipsPageWidget;
+export '/form_page/form_page_widget.dart' show FormPageWidget;
