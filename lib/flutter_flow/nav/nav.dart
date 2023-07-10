@@ -79,14 +79,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? CountControllerPageWidget()
+          ? ChoiceChipsPageWidget()
           : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? CountControllerPageWidget()
+              ? ChoiceChipsPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -305,6 +305,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CountControllerPage',
           path: '/countControllerPage',
           builder: (context, params) => CountControllerPageWidget(),
+        ),
+        FFRoute(
+          name: 'ChoiceChipsPage',
+          path: '/choiceChipsPage',
+          builder: (context, params) => ChoiceChipsPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

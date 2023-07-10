@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('CountControllerPage', context.mounted);
+                    context.goNamedAuth('ChoiceChipsPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(

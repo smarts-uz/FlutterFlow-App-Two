@@ -75,3 +75,5 @@ export '/credit_card_form_page/credit_card_form_page_widget.dart'
     show CreditCardFormPageWidget;
 export '/count_controller_page/count_controller_page_widget.dart'
     show CountControllerPageWidget;
+export '/choice_chips_page/choice_chips_page_widget.dart'
+    show ChoiceChipsPageWidget;
