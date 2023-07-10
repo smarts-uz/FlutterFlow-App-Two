@@ -71,3 +71,5 @@ export '/radio_button_page/radio_button_page_widget.dart'
 export '/pin_code_page/pin_code_page_widget.dart' show PinCodePageWidget;
 export '/slider_page/slider_page_widget.dart' show SliderPageWidget;
 export '/rating_bar_page/rating_bar_page_widget.dart' show RatingBarPageWidget;
+export '/credit_card_form_page/credit_card_form_page_widget.dart'
+    show CreditCardFormPageWidget;

@@ -78,14 +78,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? RatingBarPageWidget() : LoginPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? CreditCardFormPageWidget()
+          : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? RatingBarPageWidget()
+              ? CreditCardFormPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -294,6 +295,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'RatingBarPage',
           path: '/ratingBarPage',
           builder: (context, params) => RatingBarPageWidget(),
+        ),
+        FFRoute(
+          name: 'CreditCardFormPage',
+          path: '/creditCardFormPage',
+          builder: (context, params) => CreditCardFormPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
