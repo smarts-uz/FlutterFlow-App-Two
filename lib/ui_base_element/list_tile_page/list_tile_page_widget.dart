@@ -43,15 +43,35 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
-          title: Text(
-            FFLocalizations.of(context).getText(
-              'go7tgu88' /* ListTile Page */,
-            ),
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
+          title: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                FFLocalizations.of(context).getText(
+                  'go7tgu88' /* ListTile Page */,
                 ),
+                style: FlutterFlowTheme.of(context).headlineMedium.override(
+                      fontFamily: 'Outfit',
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+              ),
+              InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.safePop();
+                },
+                child: Icon(
+                  Icons.arrow_back,
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                  size: 24.0,
+                ),
+              ),
+            ],
           ),
           actions: [],
           centerTitle: false,
@@ -62,254 +82,267 @@ class _ListTilePageWidgetState extends State<ListTilePageWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              ListView(
-                padding: EdgeInsets.zero,
-                shrinkWrap: true,
-                scrollDirection: Axis.vertical,
-                children: [
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'qdoj3afy' /* Name */,
+              Expanded(
+                child: ListView(
+                  padding: EdgeInsets.zero,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  children: [
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'qdoj3afy' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'edx54wb1' /* Chatting here... */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'edx54wb1' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'i8bnw05t' /* Name */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'tzqoye5g' /* Chatting here... */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'i8bnw05t' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'p613b2xc' /* Name */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'tzqoye5g' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'cmdncaf6' /* Chatting here... */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'o8boxmd4' /* Name */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'p613b2xc' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'm0sf4phk' /* Chatting here... */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'cmdncaf6' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'fyd9k9hr' /* Name */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        '6iawryyb' /* Chatting here... */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'o8boxmd4' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'kvc1qsw8' /* Name */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'm0sf4phk' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        '29rhlcxd' /* Chatting here... */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'a341zt76' /* Name */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'fyd9k9hr' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        '066aetm3' /* Chatting here... */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          '6iawryyb' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'muir5pxa' /* Name */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'f0sprbxx' /* Chatting here... */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'kvc1qsw8' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        'xgxebbr3' /* Name */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          '29rhlcxd' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'flgqwjtv' /* Chatting here... */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        '4itiodkl' /* Name */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'a341zt76' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
-                    ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        'labncibx' /* Chatting here... */,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          '066aetm3' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
-                    ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
-                    ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                  ListTile(
-                    title: Text(
-                      FFLocalizations.of(context).getText(
-                        '521mr3ez' /* Name */,
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
                       ),
-                      textAlign: TextAlign.start,
-                      style: FlutterFlowTheme.of(context).titleLarge,
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    subtitle: Text(
-                      FFLocalizations.of(context).getText(
-                        '3ext8awl' /* Chatting here... */,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'muir5pxa' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
                       ),
-                      style: FlutterFlowTheme.of(context).labelMedium,
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'f0sprbxx' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
+                      ),
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
+                      ),
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    trailing: Icon(
-                      Icons.call,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 20.0,
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'xgxebbr3' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
+                      ),
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'flgqwjtv' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
+                      ),
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
+                      ),
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
                     ),
-                    tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    dense: false,
-                  ),
-                ],
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          '4itiodkl' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
+                      ),
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          'labncibx' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
+                      ),
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
+                      ),
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
+                    ),
+                    ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          '521mr3ez' /* Name */,
+                        ),
+                        textAlign: TextAlign.start,
+                        style: FlutterFlowTheme.of(context).titleLarge,
+                      ),
+                      subtitle: Text(
+                        FFLocalizations.of(context).getText(
+                          '3ext8awl' /* Chatting here... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).labelMedium,
+                      ),
+                      trailing: Icon(
+                        Icons.call,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
+                      ),
+                      tileColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      dense: false,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

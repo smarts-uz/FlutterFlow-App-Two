@@ -1,4 +1,3 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -58,22 +57,19 @@ class _IconButtonWidgetState extends State<IconButtonWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              FlutterFlowIconButton(
-                borderColor: FlutterFlowTheme.of(context).primary,
-                borderRadius: 20.0,
-                borderWidth: 1.0,
-                buttonSize: 40.0,
-                fillColor: FlutterFlowTheme.of(context).accent1,
-                hoverColor: Color(0xFFFEC92D),
-                hoverIconColor: FlutterFlowTheme.of(context).error,
-                icon: Icon(
-                  Icons.arrow_forward,
+              InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.safePop();
+                },
+                child: Icon(
+                  Icons.arrow_back,
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   size: 24.0,
                 ),
-                onPressed: () async {
-                  context.pushNamed('HomePage');
-                },
               ),
             ],
           ),
@@ -87,7 +83,20 @@ class _IconButtonWidgetState extends State<IconButtonWidget> {
             padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              children: [],
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Icon(
+                  Icons.settings_outlined,
+                  color: FlutterFlowTheme.of(context).secondaryText,
+                  size: 60.0,
+                ),
+                Icon(
+                  Icons.archive_rounded,
+                  color: Color(0xFFFEC92D),
+                  size: 35.0,
+                ),
+              ],
             ),
           ),
         ),

@@ -109,7 +109,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomePage
   {
     'eb3u478v': {
-      'uz': 'Your notes',
+      'uz': 'HomePage',
+      'en': '',
+      'ru': '',
+    },
+    'rxc6z6gm': {
+      'uz': 'UiBaseElement',
       'en': '',
       'ru': '',
     },
@@ -1041,13 +1046,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // BadgePage
   {
-    '4an3t1zt': {
-      'uz': 'Badge',
+    '7edopa1g': {
+      'uz': '8',
       'en': '',
       'ru': '',
     },
-    'yvxirs4j': {
-      'uz': '8',
+    'cyoctbak': {
+      'uz': '1',
+      'en': '',
+      'ru': '',
+    },
+    '4an3t1zt': {
+      'uz': 'Badge',
       'en': '',
       'ru': '',
     },
@@ -1059,12 +1069,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // ChartPage
   {
-    'lsarrf2x': {
+    'm4hlafx9': {
+      'uz': 'Name',
+      'en': '',
+      'ru': '',
+    },
+    'z1ib8k5e': {
       'uz': 'ChartPage',
       'en': '',
       'ru': '',
     },
-    'h9u15w0d': {
+    'eykh4zls': {
       'uz': 'Home',
       'en': '',
       'ru': '',
@@ -1072,27 +1087,188 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // TimerPage
   {
-    '7kxrmqh7': {
-      'uz': 'Start',
-      'en': '',
-      'ru': '',
-    },
-    'gkwn181c': {
-      'uz': 'Stop',
-      'en': '',
-      'ru': '',
-    },
-    '1i005daa': {
-      'uz': 'Reset',
-      'en': '',
-      'ru': '',
-    },
-    '8o9hqz09': {
+    'm9sqg5e7': {
       'uz': 'Timer',
       'en': '',
       'ru': '',
     },
-    '7b9wqvfb': {
+    'ez0qmhqp': {
+      'uz': 'Start',
+      'en': '',
+      'ru': '',
+    },
+    '1wfkcxvk': {
+      'uz': 'Stop',
+      'en': '',
+      'ru': '',
+    },
+    'bgyvjwri': {
+      'uz': 'Reset',
+      'en': '',
+      'ru': '',
+    },
+    'hrrro54v': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // RetrievingDataPage
+  {
+    '6ttbzfrp': {
+      'uz': 'Your notes',
+      'en': '',
+      'ru': '',
+    },
+    'dhg6g67t': {
+      'uz': 'Home',
+      'en': '',
+      'ru': '',
+    },
+  },
+  // UIBaseElement
+  {
+    '3s5i18i4': {
+      'uz': 'BadgePage',
+      'en': '',
+      'ru': '',
+    },
+    '085gzjto': {
+      'uz': 'AudioPlayer',
+      'en': '',
+      'ru': '',
+    },
+    'blwfg567': {
+      'uz': 'Button',
+      'en': '',
+      'ru': '',
+    },
+    '9bljeb2x': {
+      'uz': 'Blur',
+      'en': '',
+      'ru': '',
+    },
+    'jbo7oef2': {
+      'uz': 'Chart',
+      'en': '',
+      'ru': '',
+    },
+    '24236xmv': {
+      'uz': 'Calendar',
+      'en': '',
+      'ru': '',
+    },
+    '5ov8oppd': {
+      'uz': 'CricleImage',
+      'en': '',
+      'ru': '',
+    },
+    'xafrhm4o': {
+      'uz': 'YoutubePlay',
+      'en': '',
+      'ru': '',
+    },
+    'rf8x82za': {
+      'uz': 'HtmlView',
+      'en': '',
+      'ru': '',
+    },
+    'chvabb7t': {
+      'uz': 'WebView',
+      'en': '',
+      'ru': '',
+    },
+    '3yhb9pb2': {
+      'uz': 'IconBUtton',
+      'en': '',
+      'ru': '',
+    },
+    'oxz9tx8y': {
+      'uz': 'VideoPlayer',
+      'en': '',
+      'ru': '',
+    },
+    'kkdzhoi3': {
+      'uz': 'Icon',
+      'en': '',
+      'ru': '',
+    },
+    'd9rjn8pd': {
+      'uz': 'Transform',
+      'en': '',
+      'ru': '',
+    },
+    'pj36zxna': {
+      'uz': 'Image',
+      'en': '',
+      'ru': '',
+    },
+    'wy8t2rgp': {
+      'uz': 'ToggleIcon',
+      'en': '',
+      'ru': '',
+    },
+    'eceyhjm1': {
+      'uz': 'Language',
+      'en': '',
+      'ru': '',
+    },
+    'qjxfe1pa': {
+      'uz': 'ListTile',
+      'en': '',
+      'ru': '',
+    },
+    'rdhm1hne': {
+      'uz': 'Lottie',
+      'en': '',
+      'ru': '',
+    },
+    '01q4jt7k': {
+      'uz': 'PdfViewer',
+      'en': '',
+      'ru': '',
+    },
+    'hqq56cz6': {
+      'uz': 'ProgressBar',
+      'en': '',
+      'ru': '',
+    },
+    '4lku0hw8': {
+      'uz': 'RichText',
+      'en': '',
+      'ru': '',
+    },
+    'dxjenchu': {
+      'uz': 'RiveAnimat',
+      'en': '',
+      'ru': '',
+    },
+    'dzcck26k': {
+      'uz': 'StaticMap',
+      'en': '',
+      'ru': '',
+    },
+    '4wlt1y5h': {
+      'uz': 'CheckboxList',
+      'en': '',
+      'ru': '',
+    },
+    '81qg9vuc': {
+      'uz': 'Switch',
+      'en': '',
+      'ru': '',
+    },
+    'ha6ycvze': {
+      'uz': 'Timer',
+      'en': '',
+      'ru': '',
+    },
+    'iubhosj4': {
+      'uz': 'UiBaseElement',
+      'en': '',
+      'ru': '',
+    },
+    'rdfyafxd': {
       'uz': 'Home',
       'en': '',
       'ru': '',

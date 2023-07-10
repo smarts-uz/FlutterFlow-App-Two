@@ -50,9 +50,15 @@ export '/ui_base_element/pdf_viewer_page/pdf_viewer_page_widget.dart'
     show PdfViewerPageWidget;
 export '/ui_base_element/progress_bar_page/progress_bar_page_widget.dart'
     show ProgressBarPageWidget;
-export '/language_selector_page/language_selector_page_widget.dart'
+export '/ui_base_element/language_selector_page/language_selector_page_widget.dart'
     show LanguageSelectorPageWidget;
 export '/ui_base_element/badge_page/badge_page_widget.dart'
     show BadgePageWidget;
-export '/chart_page/chart_page_widget.dart' show ChartPageWidget;
-export '/timer_page/timer_page_widget.dart' show TimerPageWidget;
+export '/ui_base_element/chart_page/chart_page_widget.dart'
+    show ChartPageWidget;
+export '/ui_base_element/timer_page/timer_page_widget.dart'
+    show TimerPageWidget;
+export '/auth_supabase/retrieving_data_page/retrieving_data_page_widget.dart'
+    show RetrievingDataPageWidget;
+export '/ui_base_element/u_i_base_element/u_i_base_element_widget.dart'
+    show UIBaseElementWidget;

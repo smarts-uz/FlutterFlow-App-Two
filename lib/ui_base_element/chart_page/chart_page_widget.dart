@@ -1,30 +1,29 @@
-import '/flutter_flow/flutter_flow_static_map.dart';
+import '/auth/supabase_auth/auth_util.dart';
+import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/lat_lng.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mapbox_search/mapbox_search.dart';
 import 'package:provider/provider.dart';
-import 'static_map_page_model.dart';
-export 'static_map_page_model.dart';
+import 'chart_page_model.dart';
+export 'chart_page_model.dart';
 
-class StaticMapPageWidget extends StatefulWidget {
-  const StaticMapPageWidget({Key? key}) : super(key: key);
+class ChartPageWidget extends StatefulWidget {
+  const ChartPageWidget({Key? key}) : super(key: key);
 
   @override
-  _StaticMapPageWidgetState createState() => _StaticMapPageWidgetState();
+  _ChartPageWidgetState createState() => _ChartPageWidgetState();
 }
 
-class _StaticMapPageWidgetState extends State<StaticMapPageWidget> {
-  late StaticMapPageModel _model;
+class _ChartPageWidgetState extends State<ChartPageWidget> {
+  late ChartPageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => StaticMapPageModel());
+    _model = createModel(context, () => ChartPageModel());
   }
 
   @override
@@ -52,7 +51,7 @@ class _StaticMapPageWidgetState extends State<StaticMapPageWidget> {
             children: [
               Text(
                 FFLocalizations.of(context).getText(
-                  'jj8gq9wv' /* StaticMap */,
+                  'z1ib8k5e' /* ChartPage */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
@@ -85,18 +84,19 @@ class _StaticMapPageWidgetState extends State<StaticMapPageWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              FlutterFlowStaticMap(
-                location: LatLng(41.36019419082972, 69.28886826473872),
-                apiKey:
-                    'pk.eyJ1IjoibXVraHRvcjAzIiwiYSI6ImNsanRuMjNvdTBzOTAzcm4wMW5iYmU2cWkifQ.J5pr7CKnqpvlDhGEt8WmTw',
-                style: MapBoxStyle.Satellite_V9,
-                width: double.infinity,
-                height: 500.0,
-                fit: BoxFit.cover,
-                borderRadius: BorderRadius.circular(0.0),
-                zoom: 12,
-                tilt: 0,
-                rotation: 0,
+              Container(
+                width: 370.0,
+                height: 230.0,
+                child: FlutterFlowPieChart(
+                  data: FFPieChartData(
+                    values: [currentUserEmail],
+                    colors: [FlutterFlowTheme.of(context).primary],
+                    radius: [100.0],
+                  ),
+                  donutHoleRadius: 0.0,
+                  donutHoleColor: Colors.transparent,
+                  sectionLabelStyle: FlutterFlowTheme.of(context).headlineSmall,
+                ),
               ),
             ],
           ),

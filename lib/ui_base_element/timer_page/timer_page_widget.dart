@@ -48,15 +48,35 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
-          title: Text(
-            FFLocalizations.of(context).getText(
-              '8o9hqz09' /* Timer */,
-            ),
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
+          title: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                FFLocalizations.of(context).getText(
+                  'm9sqg5e7' /* Timer */,
                 ),
+                style: FlutterFlowTheme.of(context).headlineMedium.override(
+                      fontFamily: 'Outfit',
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      fontSize: 22.0,
+                    ),
+              ),
+              InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.safePop();
+                },
+                child: Icon(
+                  Icons.arrow_back,
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                  size: 24.0,
+                ),
+              ),
+            ],
           ),
           actions: [],
           centerTitle: false,
@@ -64,72 +84,49 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
         ),
         body: SafeArea(
           top: true,
-          child: Container(
-            width: double.infinity,
-            height: MediaQuery.sizeOf(context).height * 1.0,
-            decoration: BoxDecoration(
-              color: FlutterFlowTheme.of(context).secondaryBackground,
-            ),
+          child: Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
-                  child: FlutterFlowTimer(
-                    initialTime: _model.timerMilliseconds,
-                    getDisplayTime: (value) => StopWatchTimer.getDisplayTime(
-                      value,
-                      hours: false,
-                      milliSecond: false,
-                    ),
-                    timer: _model.timerController,
-                    updateStateInterval: Duration(milliseconds: 1000),
-                    onChanged: (value, displayTime, shouldUpdate) {
-                      _model.timerMilliseconds = value;
-                      _model.timerValue = displayTime;
-                      if (shouldUpdate) setState(() {});
-                    },
-                    onEnded: () async {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            'Time finished.',
-                            style: FlutterFlowTheme.of(context)
-                                .titleMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                ),
-                          ),
-                          duration: Duration(milliseconds: 4000),
-                          backgroundColor:
-                              FlutterFlowTheme.of(context).primaryText,
-                        ),
-                      );
-                      _model.timerController.onExecute
-                          .add(StopWatchExecute.reset);
-                    },
-                    textAlign: TextAlign.start,
-                    style: FlutterFlowTheme.of(context).displayMedium,
+                FlutterFlowTimer(
+                  initialTime: _model.timerMilliseconds,
+                  getDisplayTime: (value) => StopWatchTimer.getDisplayTime(
+                    value,
+                    hours: false,
+                    milliSecond: false,
                   ),
+                  timer: _model.timerController,
+                  updateStateInterval: Duration(milliseconds: 1000),
+                  onChanged: (value, displayTime, shouldUpdate) {
+                    _model.timerMilliseconds = value;
+                    _model.timerValue = displayTime;
+                    if (shouldUpdate) setState(() {});
+                  },
+                  onEnded: () async {
+                    _model.timerController.onExecute
+                        .add(StopWatchExecute.reset);
+                  },
+                  textAlign: TextAlign.start,
+                  style: FlutterFlowTheme.of(context).headlineSmall,
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       _model.timerController.onExecute
                           .add(StopWatchExecute.start);
                     },
                     text: FFLocalizations.of(context).getText(
-                      '7kxrmqh7' /* Start */,
+                      'ez0qmhqp' /* Start */,
                     ),
                     options: FFButtonOptions(
+                      width: double.infinity,
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
@@ -148,19 +145,20 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       _model.timerController.onExecute
                           .add(StopWatchExecute.stop);
                     },
                     text: FFLocalizations.of(context).getText(
-                      'gkwn181c' /* Stop */,
+                      '1wfkcxvk' /* Stop */,
                     ),
                     options: FFButtonOptions(
+                      width: double.infinity,
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
@@ -179,19 +177,20 @@ class _TimerPageWidgetState extends State<TimerPageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       _model.timerController.onExecute
                           .add(StopWatchExecute.reset);
                     },
                     text: FFLocalizations.of(context).getText(
-                      '1i005daa' /* Reset */,
+                      'bgyvjwri' /* Reset */,
                     ),
                     options: FFButtonOptions(
+                      width: double.infinity,
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,

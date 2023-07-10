@@ -78,13 +78,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? TimerPageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? TimerPageWidget() : RegisterPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? TimerPageWidget() : LoginPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? TimerPageWidget()
+              : RegisterPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -247,6 +248,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'TimerPage',
           path: '/timerPage',
           builder: (context, params) => TimerPageWidget(),
+        ),
+        FFRoute(
+          name: 'RetrievingDataPage',
+          path: '/retrievingDataPage',
+          builder: (context, params) => RetrievingDataPageWidget(),
+        ),
+        FFRoute(
+          name: 'UIBaseElement',
+          path: '/uIBaseElement',
+          builder: (context, params) => UIBaseElementWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -416,7 +427,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/loginPage';
+            return '/registerPage';
           }
           return null;
         },
