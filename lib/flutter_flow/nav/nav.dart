@@ -78,16 +78,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? PinCodePageWidget()
-          : RegisterPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? SliderPageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? PinCodePageWidget()
-              : RegisterPageWidget(),
+              ? SliderPageWidget()
+              : LoginPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -285,6 +284,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'PinCodePage',
           path: '/pinCodePage',
           builder: (context, params) => PinCodePageWidget(),
+        ),
+        FFRoute(
+          name: 'SliderPage',
+          path: '/sliderPage',
+          builder: (context, params) => SliderPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -452,7 +456,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/registerPage';
+            return '/loginPage';
           }
           return null;
         },

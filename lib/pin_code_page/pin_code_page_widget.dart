@@ -44,13 +44,24 @@ class _PinCodePageWidgetState extends State<PinCodePageWidget> {
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
-          title: Text(
-            'PinCode',
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.white,
-                  fontSize: 22.0,
-                ),
+          title: Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'PinCode',
+                style: FlutterFlowTheme.of(context).headlineMedium.override(
+                      fontFamily: 'Outfit',
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+              ),
+              Icon(
+                Icons.arrow_back_sharp,
+                color: FlutterFlowTheme.of(context).primaryBackground,
+                size: 24.0,
+              ),
+            ],
           ),
           actions: [],
           centerTitle: false,
