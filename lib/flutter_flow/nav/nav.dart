@@ -78,15 +78,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? CheckboxGroupPageWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? SignaturePageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? CheckboxGroupPageWidget()
+              ? SignaturePageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -320,6 +319,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CheckboxGroupPage',
           path: '/checkboxGroupPage',
           builder: (context, params) => CheckboxGroupPageWidget(),
+        ),
+        FFRoute(
+          name: 'SignaturePage',
+          path: '/signaturePage',
+          builder: (context, params) => SignaturePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
