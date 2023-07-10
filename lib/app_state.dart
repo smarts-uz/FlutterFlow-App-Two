@@ -25,6 +25,12 @@ class FFAppState extends ChangeNotifier {
   set idDarkMode(bool _value) {
     _idDarkMode = _value;
   }
+
+  int _totatCartItems = 0;
+  int get totatCartItems => _totatCartItems;
+  set totatCartItems(int _value) {
+    _totatCartItems = _value;
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

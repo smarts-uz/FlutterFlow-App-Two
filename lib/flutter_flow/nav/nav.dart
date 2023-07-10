@@ -79,14 +79,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? CreditCardFormPageWidget()
+          ? CountControllerPageWidget()
           : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? CreditCardFormPageWidget()
+              ? CountControllerPageWidget()
               : LoginPageWidget(),
         ),
         FFRoute(
@@ -300,6 +300,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CreditCardFormPage',
           path: '/creditCardFormPage',
           builder: (context, params) => CreditCardFormPageWidget(),
+        ),
+        FFRoute(
+          name: 'CountControllerPage',
+          path: '/countControllerPage',
+          builder: (context, params) => CountControllerPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

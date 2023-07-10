@@ -203,7 +203,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       return;
                     }
 
-                    context.goNamedAuth('CreditCardFormPage', context.mounted);
+                    context.goNamedAuth('CountControllerPage', context.mounted);
                   },
                   text: 'Login',
                   options: FFButtonOptions(
