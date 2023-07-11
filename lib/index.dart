@@ -81,3 +81,5 @@ export '/form_page/form_page_widget.dart' show FormPageWidget;
 export '/checkbox_group_page/checkbox_group_page_widget.dart'
     show CheckboxGroupPageWidget;
 export '/signature_page/signature_page_widget.dart' show SignaturePageWidget;
+export '/theme_widgets_page/theme_widgets_page_widget.dart'
+    show ThemeWidgetsPageWidget;
